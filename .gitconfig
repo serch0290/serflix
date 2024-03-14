@@ -1,0 +1,6 @@
+[credential]
+helper = store
+file = ~/.git-credentials-repo
+
+[alias]
+  st = status
