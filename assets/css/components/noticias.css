@@ -1,0 +1,43 @@
+.article{
+    padding-left: 5px;
+    padding-right: 5px;;
+}
+
+.article a{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.article-content{
+    background: #fff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    max-height: 196px;
+    overflow: hidden;
+    line-height: 0;
+    text-align: center;
+}
+
+
+.article-image{
+    height: 196px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transform-origin: center bottom !important;
+    -ms-transform-origin: center bottom !important;
+    -moz-transform-origin: center bottom !important;
+    -o-transform-origin: center bottom !important;
+    transform-origin: center bottom !important;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

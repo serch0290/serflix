@@ -14,6 +14,9 @@
     $request_final = explode("?", $request);
     //$array_route = explode("/", ltrim($request_final[0], '/'));
 
+    /**Configuración general del sitio */
+    $configuracion = json_decode(file_get_contents('assets/json/configuracionGeneral.json'), false);
+
         // Verificar si hay página o no
     if(isset($rutas[$request_final[0]])) {
         // Incluir el PHP adecuado
