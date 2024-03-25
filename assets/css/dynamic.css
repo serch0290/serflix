@@ -40,6 +40,15 @@ footer {
     background: #45523e; /*Color del banner fel footer*/
 }
 
+.content-item-category>strong {
+    color: #fff;
+    background-color: #45523e; /*Color de la categoria de la noticia*/
+}
+
+.article-content .title-article-content{
+    color: #45523e; /*Color de la letra de los titulos  de las noticias en el homepage*/
+}
+
 .widget-area ul li{
     color: #fff; /*Color de la letra del footer*/
 }

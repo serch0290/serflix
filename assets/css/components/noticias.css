@@ -11,17 +11,23 @@
     background: #fff;
     margin-bottom: 1.5rem;
     position: relative;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.article-content{
+.article-content-image{
     background: #fff;
-    margin-bottom: 1.5rem;
     position: relative;
     max-height: 196px;
     overflow: hidden;
     line-height: 0;
     text-align: center;
+
 }
+
+.article-image:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 
 
 .article-image{
@@ -40,4 +46,86 @@
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
+    transition: transform .2s;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 15px;
+}
+
+.article-content .title-article-content{
+  font-size: 18px !important;
+  text-align: center;
+}
+
+.article-content h4{
+   padding: 0!important;
+   margin: 0!important;
+}
+
+.content-item-category{
+    position: absolute;
+    margin-left: 10px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+}
+
+.article-content .date-title{
+    color: black;
+}
+
+.content-item-category>strong {
+    border-radius: 2rem !important;
+    box-shadow: 0 0 10px 0 rgba(119,119,119,.48);
+    padding: 0.8rem 0.75rem;
+    font-size: .75rem;
+    display: inline-block;
+}
+
+.pagination {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.pagination > * {
+    border-radius: 50%;
+    min-width: 2.5rem;
+}
+
+.pagination a{
+    background: #45523e;
+    color: #FFFFFF !important;
+}
+
+.pagination a{
+    position: relative;
+    padding: 0.625rem 0;
+    line-height: 1.5;
+    text-decoration: none;
+    background-color: #45523e;
+    margin-right: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pagination strong{
+    position: relative;
+    padding: 0.625rem 0;
+    line-height: 1.5;
+    color: #45523e;
+    text-decoration: none;
+    background-color: #fff;
+    margin-right: 5px;
+    font-size: 14px;
+    min-width: 2.5rem;
+    text-align: center;
 }

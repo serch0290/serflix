@@ -1,0 +1,4 @@
+Buscador que busque en noticias.
+Hacer dinamico el paginador, ahorita lo deje estatico
+ver como puedo dejar los texto estaticos para diferemtesa idiomas
+el caminito que sale de cada noticia

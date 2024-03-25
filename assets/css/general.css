@@ -12,7 +12,9 @@ body{
 @media (min-width: 1201px){
     .container{ max-width: 1200px;min-width: 1200px; margin-right: auto; margin-left: auto;}
 }
-.row{ display: flex; flex-wrap: wrap; flex-direction: row; }
+.row{ display: flex; flex-direction: row; }
+.wrap{ flex-wrap: wrap; }
+
 .column{ display: flex; flex-direction: column;}
 .justify-content{justify-content: space-between;}
 .align-center-items{ align-items : center; }
@@ -39,6 +41,7 @@ body{
 .flex-center{ justify-content: center;display: flex; align-items: center; }
 .pointer{ cursor: pointer; }
 .content-home{ margin-bottom: 3rem;}
+a { text-decoration: none !important;}
 
 ul {
     padding: 0;

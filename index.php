@@ -2,9 +2,9 @@
     
     //Rutas definidas del proyecto
     $rutas = [
-        '/serflix-seo/' => ['Página principal', 'sp_index.php', ''],
-        '/serflix-seo/category/perros' => ['Mantenimiento', 'sp_mantenimiento.php', '/serflix-seo/category/#'],
-        '/serflix-seo/privacidad' => ['Privacidad', 'sp_privacidad.php'],
+        '/serflix/' => ['Página principal', 'sp_index.php', ''],
+        '/serflix/category/perros' => ['Mantenimiento', 'sp_mantenimiento.php', '/serflix-seo/category/#'],
+        '/serflix/privacidad' => ['Privacidad', 'sp_privacidad.php'],
     ];
 
     //var_dump($_SERVER);Como estye puedo saber las variables del servidor
