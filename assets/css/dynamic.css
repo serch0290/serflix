@@ -53,3 +53,11 @@ footer {
     color: #fff; /*Color de la letra del footer*/
 }
 
+.button-noticia:hover {
+    border: 1px solid #45523e;
+}
+
+.button-noticia{
+    background-image: linear-gradient(to right, #45523e, #45523e 50%, rgba(0, 0, 0, 0) 50%);
+}
+

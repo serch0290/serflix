@@ -1,5 +1,4 @@
-<div class="container">
-    <div class="row wrap">
+  <div class="row wrap">
       <div class="col-4">
         <article class="article">
           <a href="#VeADetalleNoticia">
@@ -65,4 +64,3 @@
        <a class="page-numbers">5</a>
        <a class="next page-numbers">»</a>
     </div>
-</div>

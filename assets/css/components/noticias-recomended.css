@@ -1,0 +1,59 @@
+.post-thumbnail{
+   padding: 4px;
+   border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.post-thumbnail a{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.post-thumbnail .thumbnail-image{
+    background: #fff;
+    position: relative;
+    height: 150px;
+    line-height: 0;
+    text-align: center;
+    width: 50%;
+    transition: transform .2s;
+}
+
+.thumbnail-image:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.thumbnail-image-detail{
+    height: 150px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transform-origin: center bottom !important;
+    -ms-transform-origin: center bottom !important;
+    -moz-transform-origin: center bottom !important;
+    -o-transform-origin: center bottom !important;
+    transform-origin: center bottom !important;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+}
+
+.post-thumbnail  .thumbnail-content{
+    width: 50%;
+    text-align: justify;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.post-thumbnail .thumbnail-content h2{
+    font-size: 18px;
+    color:rgb(160, 160, 160);
+    margin: 0;
+}
+
+.thumbnail-text{
+    font-size: 12px;
+}
