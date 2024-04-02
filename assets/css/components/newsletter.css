@@ -1,0 +1,31 @@
+#newsletter{
+  padding: 20px;
+  background-color:#45523e;
+  text-align: center;
+ 
+}
+
+#newsletter h4{
+    color: white;
+    font-size: 20px;
+}
+
+#newsletter input{
+    padding: 4px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+}
+
+#newsletter button{
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #278fa7;
+    border: none;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}

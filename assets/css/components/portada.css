@@ -1,0 +1,55 @@
+.article-principal {
+    padding: 5px;
+}
+
+.article-principal a{
+    flex-direction: column;
+}
+
+.content-image-principal{
+    max-height: 420px;
+}
+
+.image-principal{
+    height: 420px;
+}
+
+.image-principal:hover, .article-image-thumb:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.content-principal{
+    height: 100%;
+    align-items: center;
+    padding: 30px;
+}
+
+.content-principal h2{
+    font-size: 18px !important;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.content-principal h3{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+    text-align: justify;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.content-principal h4{
+  color: red;
+  font-size: 13px;
+}
+
+.image-thumb-image{
+    max-height: 150px;
+}
+
+.article-image-thumb {
+    height: 150px;
+}

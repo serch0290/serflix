@@ -36,7 +36,7 @@ label, p, span, div, input, h1, h2, h3, h4, h5{
     color: red;
 }
 
-footer {
+footer, .list-detail-pasos > li::before {
     background: #45523e; /*Color del banner fel footer*/
 }
 
@@ -45,7 +45,7 @@ footer {
     background-color: #45523e; /*Color de la categoria de la noticia*/
 }
 
-.article-content .title-article-content{
+.article-content .title-article-content, .thumbnail-text, .content-principal h2, .list-detail-note li::marker {
     color: #45523e; /*Color de la letra de los titulos  de las noticias en el homepage*/
 }
 
@@ -53,11 +53,16 @@ footer {
     color: #fff; /*Color de la letra del footer*/
 }
 
-.button-noticia:hover {
+.button-noticia:hover, .list-detail-pasos > li::before {
     border: 1px solid #45523e;
 }
 
 .button-noticia{
     background-image: linear-gradient(to right, #45523e, #45523e 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.detail-note h3{
+    border-left: 4px solid #45523e;
+    border-right: 4px solid #45523e;
 }
 

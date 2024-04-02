@@ -1,0 +1,19 @@
+.container-about{
+    color: blue;
+    background-color: rgb(194, 191, 191);
+    font-size: 18px;
+}
+
+.title-about{
+    color: rgb(1, 1, 155);
+    background-color: rgb(194, 191, 191);
+    font-size: 20px;
+}
+
+.title-about h3{
+  text-align: center;
+}
+
+.container-about p{
+    text-align: justify;
+}

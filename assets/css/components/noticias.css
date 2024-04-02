@@ -4,24 +4,11 @@
 }
 
 .article a{
-    display: flex;
     flex-direction: column;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    background: #fff;
-    margin-bottom: 1.5rem;
-    position: relative;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .article-content-image{
-    background: #fff;
-    position: relative;
     max-height: 196px;
-    overflow: hidden;
-    line-height: 0;
-    text-align: center;
-
 }
 
 .article-image:hover {
@@ -30,21 +17,6 @@
 
 .article-image{
     height: 196px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-transform-origin: center bottom !important;
-    -ms-transform-origin: center bottom !important;
-    -moz-transform-origin: center bottom !important;
-    -o-transform-origin: center bottom !important;
-    transform-origin: center bottom !important;
-    width: 100%;
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    transition: transform .2s;
 }
 
 .article-content{
@@ -65,25 +37,9 @@
    margin: 0!important;
 }
 
-.content-item-category{
-    position: absolute;
-    margin-left: 10px;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    margin-top: 10px;
-}
 
 .article-content .date-title{
     color: black;
-}
-
-.content-item-category>strong {
-    border-radius: 2rem !important;
-    box-shadow: 0 0 10px 0 rgba(119,119,119,.48);
-    padding: 0.8rem 0.75rem;
-    font-size: .75rem;
-    display: inline-block;
 }
 
 .pagination {

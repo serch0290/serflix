@@ -3,7 +3,8 @@
     //Rutas definidas del proyecto
     $rutas = [
         '/serflix/' => ['Página principal', 'sp_index.php', ''],
-        '/serflix/category/perros' => ['Mantenimiento', 'sp_mantenimiento.php', '/serflix-seo/category/#'],
+        '/serflix/perros' => ['Mantenimiento', 'sp_category.php', '/serflix-seo/#'],
+        '/serflix/perros/downsizing-formacion-de-galaxias-y-evolucion-estelar-cosmica' => ['Nota', 'sp_noticia.php', ''],
         '/serflix/privacidad' => ['Privacidad', 'sp_privacidad.php'],
     ];
 
