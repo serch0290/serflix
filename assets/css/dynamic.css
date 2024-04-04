@@ -45,7 +45,7 @@ footer, .list-detail-pasos > li::before {
     background-color: #45523e; /*Color de la categoria de la noticia*/
 }
 
-.article-content .title-article-content, .thumbnail-text, .content-principal h2, .list-detail-note li::marker {
+.article-content .title-article-content, .thumbnail-text, .content-principal h2, .list-detail-note li::marker, .thumbnail-content-leido p{
     color: #45523e; /*Color de la letra de los titulos  de las noticias en el homepage*/
 }
 

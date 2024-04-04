@@ -137,8 +137,9 @@
     box-shadow: 0 1px 2px rgba(0,0,0,.2);
     background-color: white;
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     border-radius: 5px;
+    padding-bottom: 15px;
 }
 
 .content-box p{
@@ -213,3 +214,113 @@
     counter-increment: section;
     content: counters(section,".") ". ";
   }
+
+/*Enlazado*/
+.enlazado{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.enlazado span.enlazado-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.enlazado a {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.enlazado span{
+    padding: 4px;
+    color: #222222;
+    word-break: break-word;
+    font-weight: bold;
+}
+
+.author-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.author-box-photo{
+  width: 70px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.author-box-photo img{
+    border-radius: 10px;
+    width: 70px;
+}
+
+.author-box-biographie{
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align: justify;
+}
+
+
+/*Sección de noticias mas leidas*/
+.noticias-leidas{
+    margin-top: 20px;
+    
+}
+
+.title-noticias-leidas{
+    font-size: 20px; 
+    border-bottom: 1px solid #222222;
+}
+
+.post-thumbnail-leido{
+    width: 50%;
+    margin-bottom: 10px;    
+}
+
+.post-thumbnail-leido a{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.thumbnail-image-leido{
+    height: 130px;
+    width: 50%;
+}
+
+.thumbnail-image-leido{
+    height: 130px;
+    width: 50%;
+}
+
+.thumbnail-image-detail-leido:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.thumbnail-image-detail-leido{
+    height: 130px;
+}
+
+.thumbnail-content-leido{
+    width: 50%;
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.thumbnail-content-leido p{
+    font-size: 16px;
+    margin: 0;
+}
+
+

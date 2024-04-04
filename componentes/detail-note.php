@@ -8,12 +8,10 @@
            <span>Sergio Cruz Flores</span>
         </div>
     </div>
-
     <div class="content-box">
         <div class="thumbail">
             <img src="https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp" style="width: 100%; height: auto; object-fit: contain;"/>
         </div>
-
         <p><strong>La meteorología es una ciencia que estudia los fenómenos atmosféricos y su evolución en el tiempo.</strong> Conocer el clima y sus cambios es fundamental para tomar decisiones en diversos ámbitos, como la agricultura, la navegación o la planificación de actividades al aire libre. En este contexto, la tecnología puede ser una gran aliada para recopilar y visualizar los datos meteorológicos de manera práctica y accesible.</p>
         <p>Presentaremos un proyecto de estación meteorológica utilizando una pantalla TFT y Arduino. Explicaremos cómo construir y programar esta estación, así como también cómo obtener diferentes datos meteorológicos, como la temperatura, la humedad y la presión atmosférica. Además, aprenderemos cómo mostrar estos datos de manera gráfica en la pantalla TFT, para tener una visualización clara y atractiva de la información recopilada. ¡Comencemos con este emocionante proyecto!</p>
         <div class="table-contents">
@@ -36,8 +34,6 @@
                 </li>
             </ol>
         </div>
-
-
         <h2>
           Descubriendo los secretos del universo a través del estudio de las galaxias en miniatura
         </h2>
@@ -69,7 +65,6 @@
             <li>Protoboard</li>
             <li>Cables de conexión</li>
         </ul>
-
         <h3>Pasos</h3>
         <ul class="list-detail-pasos">
             <li>Paso 1: Lo que sea es importante</li>
@@ -96,6 +91,108 @@
         <p>Las galaxias en cúmulos y supercúmulos se forman a partir de la acumulación de gas y polvo en regiones de alta densidad. Estas regiones colapsan bajo la influencia de la gravedad, formando estrellas y posteriormente galaxias.</p>
         <h3>4. ¿Cómo se forman las galaxias en cúmulos y supercúmulos?</h3>
         <p>Las galaxias en cúmulos y supercúmulos se forman a partir de la acumulación de gas y polvo en regiones de alta densidad. Estas regiones colapsan bajo la influencia de la gravedad, formando estrellas y posteriormente galaxias.</p>
+        <div class="enlazado">
+            <span class="enlazado-title">¿Ya has leido?</span>
+            <a href="#irEnlazado">
+                <img src="https://contrasenas.top/wp-content/uploads/9-150x150.webp" style="max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: contain; margin-left: 5px;" />
+                <div class="flex align-center-items">
+                   <span style="padding: 5px;">Ten juega con ese control desconectado, poruqe solo estoy escucando Ten juega con ese control desconectado, poruqe solo estoy escucando</span>
+                </div>
+                
+            </a>
+            <a href="#irEnlazado">
+                <img src="https://contrasenas.top/wp-content/uploads/9-150x150.webp" style="max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: contain; margin-left: 5px;" />
+                <div class="flex align-center-items">
+                   <span style="padding: 5px;"><?php echo $noticia->h1 ?></span>
+                </div>
+                
+            </a>
+            <a href="#irEnlazado">
+                <img src="https://contrasenas.top/wp-content/uploads/9-150x150.webp" style="max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: contain; margin-left: 5px;" />
+                <div class="flex align-center-items">
+                   <span style="padding: 5px;"><?php echo $noticia->h1 ?></span>
+                </div>
+            </a>
+            <a href="#irEnlazado">
+                <img src="https://contrasenas.top/wp-content/uploads/9-150x150.webp" style="max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: contain; margin-left: 5px;" />
+                <div class="flex align-center-items">
+                   <span style="padding: 5px;"><?php echo $noticia->h1 ?></span>
+                </div>
+            </a>
+        </div>   
+    </div><!--Final del content-box-->
+    <div class="author-box">
+        <div class="author-box-photo">
+            <img src="https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png" />
+        </div>  
+        <div class="author-box-biographie">
+            <strong>Sergio Cruz Flores</strong>
+            <p>Apasionado de la era digital y defensor de la seguridad en línea. Leonardo creo este sitio web con el. Cuando no está investigando sobre los últimos gestores de contraseñas o escribiendo sobre cómo proteger tus datos, probablemente lo encontrarás disfrutando de una buena película o explorando nuevos destinos. Cree firmemente que un mundo digital seguro es posible con la educación y las herramientas adecuadas.</p>
+        </div>  
     </div>
-
+    <div class="noticias-leidas">
+       <p class="title-noticias-leidas">Lo que mas estan leyendo</p>
+       <div class="row wrap">
+            <div class="post-thumbnail-leido">
+              <a href="#detalleNoticiaA">
+                 <div class="container-imagen thumbnail-image-leido">
+                     <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail-leido"></div>
+                 </div>
+                 <div class="thumbnail-content-leido align-center-items">
+                    <p>Gestores de contraseñas de código abierto vs propietarios</p>
+                 </div>
+              </a>
+            </div>
+            <div class="post-thumbnail-leido">
+              <a href="#detalleNoticiaA">
+                 <div class="container-imagen thumbnail-image-leido">
+                     <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail-leido"></div>
+                 </div>
+                 <div class="thumbnail-content-leido align-center-items">
+                    <p>Gestores de contraseñas de código abierto vs propietarios</p>
+                 </div>
+              </a>
+            </div>
+            <div class="post-thumbnail-leido">
+              <a href="#detalleNoticiaA">
+                 <div class="container-imagen thumbnail-image-leido">
+                     <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail-leido"></div>
+                 </div>
+                 <div class="thumbnail-content-leido align-center-items">
+                    <p>Gestores de contraseñas de código abierto vs propietarios</p>
+                 </div>
+              </a>
+            </div>
+            <div class="post-thumbnail-leido">
+              <a href="#detalleNoticiaA">
+                 <div class="container-imagen thumbnail-image-leido">
+                     <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail-leido"></div>
+                 </div>
+                 <div class="thumbnail-content-leido align-center-items">
+                    <p>Gestores de contraseñas de código abierto vs propietarios</p>
+                 </div>
+              </a>
+            </div>
+            <div class="post-thumbnail-leido">
+              <a href="#detalleNoticiaA">
+                 <div class="container-imagen thumbnail-image-leido">
+                     <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail-leido"></div>
+                 </div>
+                 <div class="thumbnail-content-leido align-center-items">
+                    <p>Gestores de contraseñas de código abierto vs propietarios</p>
+                 </div>
+              </a>
+            </div>
+            <div class="post-thumbnail-leido">
+              <a href="#detalleNoticiaA">
+                 <div class="container-imagen thumbnail-image-leido">
+                     <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail-leido"></div>
+                 </div>
+                 <div class="thumbnail-content-leido align-center-items">
+                    <p>Gestores de contraseñas de código abierto vs propietarios</p>
+                 </div>
+              </a>
+            </div>
+       </div>
+    </div><!--Fin de div de noticias leidas-->
 </div>

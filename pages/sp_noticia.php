@@ -13,6 +13,7 @@
       <link  rel="stylesheet" href="/serflix/assets/css/dynamic.css">
       <link  rel="stylesheet" href="/serflix/assets/css/general.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticia.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/intereses.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/menu.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
@@ -37,10 +38,17 @@
                    <?php include_once 'componentes/detail-note.php';?>
                 </div>
                 <div class="col-4">
-
+                   <div class="w-100-p mx-20">
+                        <p class="sidebar-title">Ultimas Noticias</p>
+                        <?php include_once 'componentes/ultimas-noticias-lateral.php'; ?>
+                    </div>
+                    <div class="w-100-p mx-20">
+                      <p class="sidebar-title">Lo mas leido</p>
+                      <?php include_once 'componentes/intereses.php'; ?>
+                    </div>
                 </div>
-            </div>
-        </div> 
+            </div><!--Fin del row--> 
+        </div><!--Fin del column--> 
     </article>
   </main>
 
