@@ -195,4 +195,8 @@
             </div>
        </div>
     </div><!--Fin de div de noticias leidas-->
+    <?php if($noticia->comentarios){ ?>
+        <?php include_once 'componentes/comentarios.php';?>
+    <?php } ?>
+    
 </div>

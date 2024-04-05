@@ -1,0 +1,52 @@
+.comentarios{
+    margin-top: 20px;
+}
+
+.comentarios p{
+    font-size: 20px;
+    color: #222222;
+}
+
+.comentarios .form-control{
+    width: 100%;
+    border: 1px solid #ffffff26 !important;
+    padding: 10px;
+    
+}
+
+.comentarios input.form-control{
+    height: 35px;
+}
+
+.date-comment{
+    color: red !important;
+    text-align: right;
+    margin: 0;
+}
+
+.comment-list{
+    margin-bottom: 20px;
+}
+
+.author-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.author-box-comment{
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align: justify;
+}
+
+.comment-right{
+    text-align: right;
+}
+
+.comment-right .date-comment{
+    text-align: left !important;
+}
+
