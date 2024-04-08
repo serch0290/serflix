@@ -4,7 +4,9 @@
       <div class="row justify-content align-center-items h-100-p">
        <div>
          <!--Aqui va el logo-->
-         <img src="/serflix-seo/assets/images/logo.png" class="px-8" />
+            <a href="/serflix">
+              <img src="/serflix-seo/assets/images/logo.png" class="px-8" />
+            </a>
        </div>
        <div>
          <!--Aqui va el buscador-->

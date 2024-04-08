@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6{
 .content-home{ margin-bottom: 3rem;}
 a { text-decoration: none !important;}
 
+.mr-10{ margin-right: 10px;}
 .p-10{ padding: 10px; }
 .m-10{ margin: 10px; }
 .p-12{ padding: 12px; }
@@ -68,6 +69,7 @@ a { text-decoration: none !important;}
 .w-10-p{ width: 10%; }
 .w-85-p{ width: 85%; }
 .mt-8{ margin-top: 8px;}
+.mt-12{ margin-top: 12px;}
 .mt-20{ margin-top: 20px;}
 .font-size-18{ font-size: 18px; }
 .font-size-16{ font-size: 16px; }

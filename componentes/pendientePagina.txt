@@ -1,11 +1,8 @@
 Buscador que busque en noticias.
 Hacer dinamico el paginador, ahorita lo deje estatico
 ver como puedo dejar los texto estaticos para diferemtesa idiomas
-el caminito que sale de cada noticia
 me laflta hacer responsivo las noticias que hice del estilo primero
 estoy haciendo muchos componente cada componente con su css, al hacerlo dinamico solo importar los css que son
-agregar el efecto de aparecer a todo lo que vaya saliendo.
-efecto de acercar en nositicas laterales no funciona bien. revisar
 hacer un stilo desde la api que tenga todos los font.size, etc con lo hice con scss
 hacer cortador de titulos donde no alcance el espacio que se les asigno
 falta ver su menu se va a quedar fixed
@@ -16,3 +13,6 @@ implementar el bold donde aplique, pero de la fuente, no del uso de la etiqueta 
 en la parte de comentarios validar que el correo es correcto
 En comentarios guardados, poner una foto generica
 Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo
+En el cms tengo que hacer las imagenes de diferentes tamaños
+Falta poner breadcums en pagina de categoria
+tengo unos h3 y h2 que no van en titulos deben de ir p o span
