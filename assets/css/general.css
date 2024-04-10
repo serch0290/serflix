@@ -13,17 +13,41 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*Contenedores y tamaños de las columnas*/
-@media (min-width: 1201px){
+@media (min-width: 1250px){
     .container{ max-width: 1200px;min-width: 1200px; margin-right: auto; margin-left: auto;}
 }
+
+@media(max-width: 1249px){
+    .container{ max-width: 85vw; min-width: 85vw; margin-right: auto; margin-left: auto;}
+}
+
 .row{ display: flex; flex-direction: row; }
+.column{ display: flex; flex-direction: column;}
+
+@media(min-width: 1250px){
+    .row-lg{ display: flex; flex-direction: row; }
+    .column-lg{ display: flex; flex-direction: column;}
+}
+
+@media(min-width: 992px){
+    .row-md{ display: flex; flex-direction: row; }
+    .column-md{ display: flex; flex-direction: column;}
+}
+
+@media(min-width: 760px){
+    .row-sm{ display: flex; flex-direction: row; }
+    .column-sm{ display: flex; flex-direction: column;}
+}
+
 .wrap{ flex-wrap: wrap; }
 .flex { display: flex;}
 
-.column{ display: flex; flex-direction: column;}
+
 .justify-content{justify-content: space-between;}
 .align-center-items{ align-items : center; justify-content: center;}
 .align-end-items{ align-items: flex-end; align-content: flex-end; justify-content: flex-end }
+
+
 .col-12{ flex: 0 0 100%; max-width: 100%;}
 .col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
 .col-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
@@ -36,6 +60,17 @@ h1, h2, h3, h4, h5, h6{
 .col-3 { flex: 0 0 25%; max-width: 25%; }
 .col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
 .col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+
+@media(min-width: 1250px){
+    .col-lg-6{ flex: 0 0 50%; max-width: 50%; }
+    .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+}
+
+@media(min-width: 750px){
+
+}
+
+
 .pt-8{ padding-top: 8px;}
 .pt-12{ padding-top: 12px;}
 .h-100-p{ height: 100%; }

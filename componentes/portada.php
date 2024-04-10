@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col-6">
+<div class="row-lg column">
+    <div class="col-lg-6 col-12">
         <article class="article-principal">
           <a class="container-noticia" href="#VeADetalleNoticia">
               <div class="container-imagen content-image-principal">
@@ -16,7 +16,7 @@
           </a>
         </article>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-12">
        <div class="row wrap">
           <div class="col-6">
             <article class="article-principal">

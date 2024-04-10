@@ -20,10 +20,10 @@
   <body>
   <?php include_once 'componentes/menu.php';?>
   <!-- Mnesjae principal de la pagina h1 -->
-  <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
-
+  
   <!--Sección de noticias estilo tipo 1-->
   <div class="container">
+    <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
     <div class="column">
        <?php include_once 'componentes/portada.php' ?>
     </div>  
@@ -58,7 +58,7 @@
   </div>
   
   <?php include_once 'componentes/footer.php';?>
-  <?php include_once 'componentes/cookies.php';?>
+  <?php //include_once 'componentes/cookies.php';?>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
