@@ -1,5 +1,5 @@
 <div class="row-lg column">
-    <div class="col-lg-6 col-12">
+    <div class="col-lg-6 col-12 mb-20-lt-lg">
         <article class="article-principal">
           <a class="container-noticia" href="#VeADetalleNoticia">
               <div class="container-imagen content-image-principal">
@@ -18,7 +18,7 @@
     </div>
     <div class="col-lg-6 col-12">
        <div class="row wrap">
-          <div class="col-6">
+          <div class="col-xs-6 col-12 mb-20-lt-lg">
             <article class="article-principal">
                 <a class="container-noticia" href="#VeADetalleNoticia">
                     <div class="container-imagen image-thumb-image">
@@ -34,7 +34,7 @@
                 </a>
             </article>
           </div>
-          <div class="col-6">
+          <div class="col-xs-6 col-12 mb-20-lt-lg">
           <article class="article-principal">
                 <a class="container-noticia" href="#VeADetalleNoticia">
                     <div class="container-imagen image-thumb-image">
@@ -51,7 +51,7 @@
             </article>
 
           </div>
-          <div class="col-6">
+          <div class="col-xs-6 col-12 mb-20-lt-lg">
           <article class="article-principal">
                 <a class="container-noticia" href="#VeADetalleNoticia">
                     <div class="container-imagen image-thumb-image">
@@ -67,7 +67,7 @@
                 </a>
             </article>
           </div>
-          <div class="col-6">
+          <div class="col-xs-6 col-12 mb-20-lt-lg">
             <article class="article-principal">
                 <a class="container-noticia" href="#VeADetalleNoticia">
                     <div class="container-imagen image-thumb-image">

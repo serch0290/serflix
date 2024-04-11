@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column mb-10-lt-md">
     <div class="p-40 container-about">
         <h3 class="title-about text-center"><strong>Acerca de Nosotros</strong></h3>
         <p>Welcome to wealthypeeps.com, your trusted source for breaking news, in-depth analysis, and exclusive content worldwide.</p>

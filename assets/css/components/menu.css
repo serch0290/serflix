@@ -152,6 +152,12 @@ ul.menu {
     padding-left: 15px;
   }
 
+  @media(max-width: 772px){
+    .input-search{
+      display: none !important;
+    }
+  }
+
   /*Menu mobile*/
 
   .show-mobile-menu {
@@ -295,7 +301,7 @@ ul.menu {
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1249px) {
   .menu{
     display: none !important;
   }

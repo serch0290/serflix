@@ -8,7 +8,7 @@
                 <h2 class="title-article-content">
                     <strong>La astronomia: una puerte estelar para apreciar el universo</strong>
                 </h2>
-                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia</h3>
+                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia.</h3>
                 <h4>01 de Enero del 2024</h4>
             </div>
           </a>
@@ -22,7 +22,7 @@
                 <h2 class="title-article-content">
                     <strong>La astronomia: una puerte estelar para apreciar el universo</strong>
                 </h2>
-                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia</h3>
+                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia.</h3>
                 <h4>01 de Enero del 2024</h4>
             </div>
           </a>
@@ -36,7 +36,7 @@
                 <h2 class="title-article-content">
                     <strong>La astronomia: una puerte estelar para apreciar el universo</strong>
                 </h2>
-                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia</h3>
+                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia.</h3>
                 <h4>01 de Enero del 2024</h4>
             </div>
           </a>
@@ -50,7 +50,7 @@
                 <h2 class="title-article-content">
                     <strong>La astronomia: una puerte estelar para apreciar el universo</strong>
                 </h2>
-                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia</h3>
+                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia.</h3>
                 <h4>01 de Enero del 2024</h4>
             </div>
           </a>
@@ -64,7 +64,7 @@
                 <h2 class="title-article-content">
                     <strong>La astronomia: una puerte estelar para apreciar el universo</strong>
                 </h2>
-                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia</h3>
+                <h3>Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia, Descripción de esta noticia.</h3>
                 <h4>01 de Enero del 2024</h4>
             </div>
           </a>

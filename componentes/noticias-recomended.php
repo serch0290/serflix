@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column" id="recommended-news">
     <div class="post-thumbnail">
         <a href="#detalleFavoritos">
             <div class="container-imagen thumbnail-image">

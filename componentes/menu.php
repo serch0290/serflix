@@ -1,7 +1,7 @@
 <header class="site-header green-bg">
    <div class="container h-60">
    <!--<i class="fa-solid fa-align-justify"></i>-->
-      <div class="row justify-content align-center-items h-100-p">
+      <div class="row justify-content align-center-items-lg align-center-lt-lg h-100-p">
        <div>
          <!--Aqui va el logo-->
             <a href="/serflix">

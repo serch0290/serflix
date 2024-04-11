@@ -34,9 +34,14 @@ h1, h2, h3, h4, h5, h6{
     .column-md{ display: flex; flex-direction: column;}
 }
 
-@media(min-width: 760px){
+@media(min-width: 772px){
     .row-sm{ display: flex; flex-direction: row; }
     .column-sm{ display: flex; flex-direction: column;}
+}
+
+@media(min-width: 600px){
+    .row-xs{ display: flex; flex-direction: row; }
+    .column-xs{ display: flex; flex-direction: column;}
 }
 
 .wrap{ flex-wrap: wrap; }
@@ -64,10 +69,55 @@ h1, h2, h3, h4, h5, h6{
 @media(min-width: 1250px){
     .col-lg-6{ flex: 0 0 50%; max-width: 50%; }
     .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+    .col-lg-8 { flex: 0 0 66.666667%; max-width: 66.666667%;}
+    .col-lg-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+    .align-center-items-lg{ align-items : center; justify-content: center;}
 }
 
-@media(min-width: 750px){
+@media(min-width: 992px){
+    .col-md-6{ flex: 0 0 50%; max-width: 50%; }
+    .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+    .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%;}
+    .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+}
 
+@media(min-width: 772px){
+    .col-sm-6{ flex: 0 0 50%; max-width: 50%; }
+    .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+    .col-sm-8 { flex: 0 0 66.666667%; max-width: 66.666667%;}
+    .col-sm-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+}
+
+@media(min-width: 600px){
+    .col-xs-6{ flex: 0 0 50%; max-width: 50%; }
+    .col-xs-3 { flex: 0 0 25%; max-width: 25%; }
+    .col-xs-8 { flex: 0 0 66.666667%; max-width: 66.666667%;}
+    .col-xs-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+}
+
+@media(max-width: 1249px){
+  .mb-20-lt-lg{
+    margin-bottom: 20px;
+  }
+
+  .align-center-lt-lg{
+    align-items : center;
+  }
+}
+
+@media(max-width: 991px){
+    .mb-10-lt-md{ margin-bottom: 10px; }
+}
+
+@media(max-width: 771px){
+    .input-search-below{
+        display: block !important;
+    }
+    
+}
+
+@media(max-width: 599px){
+    
 }
 
 
@@ -208,3 +258,14 @@ ul {
 
 .white-bg { background: white; }
 .white-fg { color: white; }
+
+/*buscador*/
+.input-search-below{
+    display: none;
+    width: 80%;
+    border-radius: 15px;
+    border: 1px solid #ffffff26 !important;
+    height: 25px;
+    margin: auto;
+    padding-left: 15px;
+}
