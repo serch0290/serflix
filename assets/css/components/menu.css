@@ -8,6 +8,10 @@
 
 .site-header img{ width: 280px; height: 40px; vertical-align: middle;}
 
+@media(max-width: 500px){
+  .site-header img{ width: 220px;}
+}
+
 /*Estilo del menú*/
 
 ul.menu {

@@ -5,7 +5,7 @@
        <div>
          <!--Aqui va el logo-->
             <a href="/serflix">
-              <img src="/serflix-seo/assets/images/logo.png" class="px-8" />
+              <img src="/serflix/assets/images/logo.png" class="px-8" />
             </a>
        </div>
        <div>

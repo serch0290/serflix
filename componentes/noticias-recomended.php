@@ -1,4 +1,11 @@
+<?php
+  //Obtenemos toda la configuración de la noticia
+  $noticia_recomended = json_decode(file_get_contents('assets/json/serflix/noticias-recomended.json'), false);
+?>
 <div class="column" id="recommended-news">
+    <p class="title-section">
+         <strong><?php echo $noticia_recomended->title; ?></strong>
+    </p>
     <div class="post-thumbnail">
         <a href="#detalleFavoritos">
             <div class="container-imagen thumbnail-image">

@@ -4,12 +4,23 @@
     font-display: swap;
 }
 
+@font-face{
+    font-family:'Poppins-Bold';
+    src:url("../fonts/fonts/Poppins-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+
 body{
     background: #F3F4F8 /*Color del cuerpo de la pagina*/;
 }
 
 label, p, span, div, input, h1, h2, h3, h4, h5{
     font-family: 'Poppins-Light' !important;
+}
+
+strong{
+    font-family: 'Poppins-Bold' !important;
 }
 
 .mobile-menu ul li.has-sub.actived>.submenu-toggle:after, .mobile-menu ul li.has-sub.actived>a {
