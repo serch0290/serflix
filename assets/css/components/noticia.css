@@ -33,6 +33,73 @@
     text-align: justify;
 }
 
+@media(max-width: 771px){
+    .detail-note h1{
+        font-size: 35px;
+    }
+
+    .iframe-youtube {
+      min-height: 415px !important;
+    }
+
+    .author-box-biographie p{
+        font-size: 16px !important;
+    }
+
+    .thumbnail-content-leido p{
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 599px){
+    .detail-note h1{
+        font-size: 30px;
+    }
+
+    .breadcrums li span, .breadcrums li a {
+        font-size: 13px;
+    }
+
+
+    .content-box p, .table-contents  li a, .list-detail-note li, .detail-note h3, .list-detail-pasos > li, .enlazado span{
+     font-size: 16px !important;
+    }
+
+    .detail-note h2 {
+        font-size: 20px !important;
+    }
+
+    .iframe-youtube {
+        min-height: 350px !important;
+    }
+
+    .author-box-biographie p{
+        font-size: 15px !important;
+    }
+
+    .post-thumbnail-leido{
+        width: 100% !important;
+    }
+
+    .check-aviso-privacidad{
+        font-size: 14px;
+    }
+
+    .list-detail-pasos {
+        margin-left: 35px !important;
+    }
+}
+
+@media(max-width: 400px){
+    .enlazado span {
+        font-size: 15px !important;
+    }
+
+    .iframe-youtube {
+        min-height: 250px !important;
+    }
+}
+
 
 .detail-note h2{
     font-size: 25px;
@@ -210,6 +277,11 @@
     cursor: pointer;
 }
 
+.table-contents  li a{
+    font-size: 17px;
+    color: #222 !important;
+}
+
 .table-contents  li::before {
     counter-increment: section;
     content: counters(section,".") ". ";
@@ -238,6 +310,7 @@
 
 .enlazado span{
     padding: 4px;
+    font-size: 17px;
     color: #222222;
     word-break: break-word;
     font-weight: bold;
@@ -266,11 +339,13 @@
     text-align: justify;
 }
 
+.author-box-biographie p{
+  font-size: 17px;
+}
+
 /*Sección de noticias mas leidas*/
 .noticias-leidas{
     margin-top: 20px;
-    margin-bottom: 20px;
-    
 }
 
 .title-noticias-leidas{
@@ -297,7 +372,7 @@
 }
 
 .thumbnail-image-leido{
-    height: 120px;
+    height: 130px;
     width: 50%;
 }
 
@@ -321,6 +396,20 @@
 .thumbnail-content-leido p{
     font-size: 15px;
     margin: 0;
+}
+
+.intereses-mobile{
+    display: none;
+}
+
+@media(max-width: 1099px){
+    .aside-noticias{
+        display: none !important;
+    }
+
+    .intereses-mobile{
+        display: block !important;
+    }
 }
 
 

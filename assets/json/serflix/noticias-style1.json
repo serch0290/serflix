@@ -1,0 +1,5 @@
+{
+    "title": "Todas las noticias",
+    "mascara": "/serflix/pagina/{idPagina}",
+    "totalNoticias": 180
+}

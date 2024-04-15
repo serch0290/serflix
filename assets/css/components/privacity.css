@@ -10,6 +10,38 @@
     padding-top: 10px;
 }
 
+.privacity p{
+    font-size: 17px;
+}
+
+@media(max-width: 771px){
+    .privacity h1{
+        font-size: 35px !important;
+    }
+
+    .privacity h2{
+        font-size: 25px !important;
+    }
+
+    .privacity p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 599px){
+    .privacity h1{
+        font-size: 30px !important;
+    }
+
+    .privacity h2{
+        font-size: 20px !important;
+    }
+
+    .privacity p, .privacity ul li{
+        font-size: 15px;
+    }
+}
+
 .privacity h2{
     font-size: 30px;
 }
@@ -29,3 +61,8 @@
 .privacity ul li{
     margin-bottom: 15px;
 }
+
+.privacity ul li a{
+    color: #222;
+    text-decoration: underline !important;
+} 

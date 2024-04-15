@@ -35,11 +35,15 @@
                     }
                 ?>
             </ul>
-            <div class="row">
-                <div class="col-8">
+            <div class="row-lx column">
+                <div class="col-lx-8">
                    <?php include_once 'componentes/detail-note.php';?>
+                   <div class="intereses-mobile">
+                      <p class="sidebar-title">Lo mas leido</p>
+                      <?php include_once 'componentes/intereses.php'; ?>
+                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lx-4 aside-noticias">
                    <aside class="w-100-p mx-40">
                    <div>
                         <p class="sidebar-title">Ultimas Noticias</p>

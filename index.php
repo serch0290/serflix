@@ -4,6 +4,7 @@
     $rutas = [
         '/serflix/' => ['Página principal', 'sp_index.php', ''],
         '/serflix/principal' => ['Página principal', 'sp_index_principal.php', ''],
+        '/serflix/perros/principal' => ['Mantenimiento', 'sp_category_principal.php'],
         '/serflix/perros' => ['Mantenimiento', 'sp_category.php'],
         '/serflix/perros/downsizing-formacion-de-galaxias-y-evolucion-estelar-cosmica' => ['Nota', 'sp_noticia.php', ''],
         '/serflix/privacidad' => ['Privacidad', 'sp_privacidad.php'],

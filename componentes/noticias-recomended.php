@@ -12,7 +12,7 @@
                 <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-detail"></div>
             </div>
             <div class="thumbnail-content">
-               <div class="h-80-p text-justify">
+               <div class="h-80-p text-justify align-center flex">
                   <h2>La astronomia: una puerte estelar para apreciar el universo</h2>
                </div>
                <div class="h-20-p text-right">

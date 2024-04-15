@@ -13,6 +13,22 @@
     margin-top: 20px;
 }
 
+.detail-about-me p{
+    font-size: 17px;
+}
+
+@media(max-width: 599px){
+    .detail-about-me p{
+        font-size: 15px;
+    }
+
+    .detail-about-me img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
 .detail-about-me p:not(.text-center){
     text-align: justify;
 }

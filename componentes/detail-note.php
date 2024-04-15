@@ -17,7 +17,7 @@
         <div class="table-contents">
             <div class="title-table-contents">
                 <div class="align-center-items flex w-10-p"><i class="fa-solid fa-newspaper font-size-22"></i></div>
-                <div class="text-left w-85-p font-size-16"><span>Contenido</span></div>
+                <div class="text-left w-85-p font-size-16 pl-8"><span>Contenido</span></div>
                 <div class="text-center w-5-p">
                    <div class="flecha-abajo pointer" onClick="mostrarAcordeon();"></div>
                 </div>
@@ -96,7 +96,7 @@
             <a href="#irEnlazado">
                 <img src="https://contrasenas.top/wp-content/uploads/9-150x150.webp" style="max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: contain; margin-left: 5px;" />
                 <div class="flex align-center-items">
-                   <span style="padding: 5px;">Ten juega con ese control desconectado, poruqe solo estoy escucando Ten juega con ese control desconectado, poruqe solo estoy escucando</span>
+                   <span style="padding: 5px;"><?php echo $noticia->h1 ?></span>
                 </div>
                 
             </a>
@@ -121,7 +121,7 @@
             </a>
         </div>   
     </div><!--Final del content-box-->
-    <div class="author-box">
+    <div class="author-box" id="author-box">
         <div class="author-box-photo">
             <img src="https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png" />
         </div>  
@@ -132,7 +132,7 @@
     </div>
     <div class="noticias-leidas">
        <p class="title-noticias-leidas">Lo que mas estan leyendo</p>
-       <div class="row wrap">
+       <div class="row-xs wrap-xs column">
             <div class="post-thumbnail-leido">
               <a href="#detalleNoticiaA">
                  <div class="container-imagen thumbnail-image-leido">

@@ -10,6 +10,16 @@
     padding-top: 10px;
 }
 
+@media(max-width: 599px){
+    .contacto h1 {
+        font-size: 30px !important;
+    }
+
+    input.form-control {
+        width: 96% !important;
+    }
+}
+
 .detalle-formulario{
     padding: 10px;
 }

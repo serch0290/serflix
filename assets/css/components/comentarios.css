@@ -3,7 +3,7 @@
 }
 
 .comentarios p{
-    font-size: 17px;
+    font-size: 15px;
     color: #222222;
 }
 
@@ -42,175 +42,17 @@
 
 .author-box{
     display: flex;                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     flex-direction: row;
     margin-bottom: 20px;
+}
+
+@media(max-width: 599px){
+    #author-box{
+        flex-direction: column !important;
+        align-items : center; 
+        justify-content: center;
+
+    }
 }
 
 .author-box-comment{

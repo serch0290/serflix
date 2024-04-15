@@ -27,13 +27,7 @@
        <div class="col-lx-8 col-12">
           <div class="mx-20 w-100-p mt-20">
              <?php include_once 'componentes/about-us.php' ?>
-
              <div class="mt-20">
-               <p class="title-section">
-                 <strong>
-                  Todas las noticias
-                </strong>
-              </p>
                <?php include_once 'componentes/noticias-style1.php'; ?>
              </div>
 

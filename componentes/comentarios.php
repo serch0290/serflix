@@ -1,5 +1,7 @@
 <div class="comentarios">
-    <p>Comentarios</p>
+    <p>
+        <strong>Comentarios</strong>
+    </p>
 
     <div class="comment-list">
        <div class="author-box">
@@ -26,11 +28,11 @@
     </div>
     <p>Deja un comentario</p>
     <div class="column">
-        <div class="row">
-            <div class="w-50-p mr-10">
+        <div class="row-xs column">
+            <div class="w-50-p-xs mr-10-xs mb-10-lt-xs">
                 <input type="text" placeholder="Nombre" class="form-control"/>
             </div>
-            <div class="w-50-p">
+            <div class="w-50-p-xs">
                <input type="text" placeholder="Correo Electrónico" class="form-control"/>
             </div>
         </div>
@@ -38,11 +40,11 @@
             <textarea rows="8" class="form-control" placeholder="Comentario"></textarea>
         </div>
         <div class="column p-10">
-            <div class="row">
-                <div class="flex w-50-p">
+            <div class="row-xs mb-20">
+                <div class="flex w-50-p-xs">
                    <label class="check-aviso-privacidad"><input type="checkbox" /> He leído y acepto la <a>Política de Privacidad.</a></label><br />
                 </div>
-                <div class="flex align-end-items w-50-p">
+                <div class="flex align-end-items w-50-p-xs">
                    <button class="button-noticia">Publicar Comentario</button>
                 </div>
             </div>

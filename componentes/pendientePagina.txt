@@ -17,3 +17,5 @@ En el cms tengo que hacer las imagenes de diferentes tamaños
 Falta poner breadcums en pagina de categoria
 tengo unos h3 y h2 que no van en titulos deben de ir p o span
 hacer icono que cuando estes abajo y les des click te lleve hasta arriba hasta un scrolltop
+
+me falto solo categoria de la noticia hacerla responsiva y botones cuando sea responsivo que salgan en verde.
