@@ -3,6 +3,7 @@
     //Rutas definidas del proyecto
     $rutas = [
         '/serflix/' => ['Página principal', 'sp_index.php', ''],
+        '/serflix' => ['Página principal', 'sp_index.php', ''],
         '/serflix/principal' => ['Página principal', 'sp_index_principal.php', ''],
         '/serflix/perros/principal' => ['Mantenimiento', 'sp_category_principal.php'],
         '/serflix/perros' => ['Mantenimiento', 'sp_category.php'],
@@ -17,7 +18,11 @@
     $request = $_SERVER["REQUEST_URI"];
     //Quitamos las variables que puedan llegar por url
     $request_final = explode("?", $request);
-    //$array_route = explode("/", ltrim($request_final[0], '/'));
+
+    /**Validar si la pagina tiene paginacion*/
+    if(str_contains($request_final[0], 'pagina')){
+       $request_final = explode('/pagina/',$request_final[0]);
+    }
 
     /**Configuración general del sitio */
     $configuracion = json_decode(file_get_contents('assets/json/configuracionGeneral.json'), false);

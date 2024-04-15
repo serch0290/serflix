@@ -1,5 +1,11 @@
 {
     "title": "Todas las noticias",
     "mascara": "/serflix/pagina/{idPagina}",
-    "totalNoticias": 180
+    "totalNoticias": 180,
+    "pagination": {
+        "mask": "/serflix/pagina/#",
+        "prefix": "pagina/",
+        "total": 246,
+        "paginasMostrar": 5
+    }
 }

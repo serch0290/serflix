@@ -1,9 +1,59 @@
 <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    
     $request = $_SERVER["REQUEST_URI"];
     //Quitamos las variables que puedan llegar por url
     $request_final = explode("?", $request);
     //Obtenemos toda la configuración de la noticia
     $noticia_style1 = json_decode(file_get_contents('assets/json/serflix/noticias-style1.json'), false);
+
+
+    $prefix = $noticia_style1->pagination->mask;
+    $values = explode("/", $prefix);
+    $posicionValor = 0;
+    $page = 0;
+    $limiteInferior = 0;
+    $limiteSuperior = 0;
+    $total_pages = ceil($noticia_style1->pagination->total / $noticia_style1->pagination->paginasMostrar);  
+
+    /**Si es diferenye de cero quiere decir que se debe de agregar una pagina extra*/
+    if(($noticia_style1->pagination->total % $noticia_style1->pagination->paginasMostrar) != 0) $total_pages++;
+
+    foreach ($values as $key => $valor){
+      if($valor == '#'){
+         $posicionValor = $key;
+      }
+    }
+
+    if (str_contains($request_final[0], $noticia_style1->pagination->prefix)) {
+        var_dump(explode("/",$request_final[0]));
+        $page = (int)explode("/",$request_final[0])[$posicionValor];//obtener el valos de la pagina en la url
+    }else{
+        $page = 1; //Si no tienen el prefijo quiere decir que estamos en la primera pagina
+    }
+
+    /* Obtenemos el limite inferior*/
+    if(($page - 2) >= 1){
+        echo 'entra aqui';
+        $limiteInferior = ($page - 2);
+    }else if(($page - 1) >= 1){
+      echo 'o aca';
+        $limiteInferior = ($page - 1);
+    }else{
+      echo 'mejos a este'.  $page;
+        $limiteInferior = $page;
+    }
+
+    /* Obtenemos el limite superior */
+    if(($limiteInferior + 4) <= $total_pages){
+        $limiteSuperior = ($limiteInferior + 4);
+    }else{
+        $limiteSuperior = $total_pages;
+    }
+
+    echo $page. ' - '.$limiteInferior. ' - '.$limiteSuperior;
 ?>
 <p class="title-section">
     <strong>
@@ -77,11 +127,15 @@
       </div>
     </div>
     <div class="pagination">
-       <a class="prev page-numbers">«</a>
-       <strong class="page-numbers">1</strong>
-       <a class="page-numbers" href="#VeADetalleNoticiaPage2">2</a>
-       <a class="page-numbers">3</a>
-       <a class="page-numbers">4</a>
-       <a class="page-numbers">5</a>
-       <a class="next page-numbers">»</a>
+       <?php 
+        if($page >= 2) echo "<a class=\"prev page-numbers\">«</a>";
+        for($i = $limiteInferior; $i<= $limiteSuperior; $i++){
+          if($i == $page){
+             echo "<strong class=\"page-numbers\">".$i."</strong>";
+          }else{
+             echo "<a class=\"page-numbers\" href=\"". $noticia_style1->pagination->prefix.$i."\">".$i."</a>";
+          }
+        }
+        if($page < $total_pages) echo "<a class=\"next page-numbers\">»</a>";
+       ?>
     </div>
