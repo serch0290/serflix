@@ -17,6 +17,7 @@
     $limiteInferior = 0;
     $limiteSuperior = 0;
     $total_pages = ceil($noticia_style1->pagination->total / $noticia_style1->pagination->paginasMostrar);  
+    echo 'total de paginas: '.$total_pages;
 
     /**Si es diferenye de cero quiere decir que se debe de agregar una pagina extra*/
     if(($noticia_style1->pagination->total % $noticia_style1->pagination->paginasMostrar) != 0) $total_pages++;
@@ -28,7 +29,6 @@
     }
 
     if (str_contains($request_final[0], $noticia_style1->pagination->prefix)) {
-        var_dump(explode("/",$request_final[0]));
         $page = (int)explode("/",$request_final[0])[$posicionValor];//obtener el valos de la pagina en la url
     }else{
         $page = 1; //Si no tienen el prefijo quiere decir que estamos en la primera pagina
@@ -36,13 +36,10 @@
 
     /* Obtenemos el limite inferior*/
     if(($page - 2) >= 1){
-        echo 'entra aqui';
         $limiteInferior = ($page - 2);
     }else if(($page - 1) >= 1){
-      echo 'o aca';
         $limiteInferior = ($page - 1);
     }else{
-      echo 'mejos a este'.  $page;
         $limiteInferior = $page;
     }
 
@@ -52,8 +49,6 @@
     }else{
         $limiteSuperior = $total_pages;
     }
-
-    echo $page. ' - '.$limiteInferior. ' - '.$limiteSuperior;
 ?>
 <p class="title-section">
     <strong>

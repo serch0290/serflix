@@ -3,8 +3,8 @@
     "mascara": "/serflix/pagina/{idPagina}",
     "totalNoticias": 180,
     "pagination": {
-        "mask": "/serflix/pagina/#",
-        "prefix": "pagina/",
+        "mask": "http://localhost:8080/serflix/pagina/#",
+        "prefix": "http://localhost:8080/serflix/pagina/",
         "total": 246,
         "paginasMostrar": 5
     }
