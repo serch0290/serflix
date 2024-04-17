@@ -16,23 +16,23 @@
     $page = 0;
     $limiteInferior = 0;
     $limiteSuperior = 0;
-    $total_pages = ceil($noticia_style1->pagination->total / $noticia_style1->pagination->paginasMostrar);  
-    echo 'total de paginas: '.$total_pages;
+    $total_pages = (int)($noticia_style1->pagination->total / $noticia_style1->pagination->paginasMostrar);  
 
     /**Si es diferenye de cero quiere decir que se debe de agregar una pagina extra*/
     if(($noticia_style1->pagination->total % $noticia_style1->pagination->paginasMostrar) != 0) $total_pages++;
-
     foreach ($values as $key => $valor){
       if($valor == '#'){
          $posicionValor = $key;
       }
     }
 
-    if (str_contains($request_final[0], $noticia_style1->pagination->prefix)) {
+    if (str_contains($request_final[0], $noticia_style1->pagination->name)) {
         $page = (int)explode("/",$request_final[0])[$posicionValor];//obtener el valos de la pagina en la url
     }else{
         $page = 1; //Si no tienen el prefijo quiere decir que estamos en la primera pagina
     }
+
+
 
     /* Obtenemos el limite inferior*/
     if(($page - 2) >= 1){
@@ -47,6 +47,7 @@
     if(($limiteInferior + 4) <= $total_pages){
         $limiteSuperior = ($limiteInferior + 4);
     }else{
+      $limiteInferior = $total_pages - 4;
         $limiteSuperior = $total_pages;
     }
 ?>
@@ -123,14 +124,14 @@
     </div>
     <div class="pagination">
        <?php 
-        if($page >= 2) echo "<a class=\"prev page-numbers\">«</a>";
+        if($page >= 2) echo "<a class=\"prev page-numbers\" href=\"".$noticia_style1->pagination->dominio.$noticia_style1->pagination->prefix.($page-1)."\">«</a>";
         for($i = $limiteInferior; $i<= $limiteSuperior; $i++){
           if($i == $page){
              echo "<strong class=\"page-numbers\">".$i."</strong>";
           }else{
-             echo "<a class=\"page-numbers\" href=\"". $noticia_style1->pagination->prefix.$i."\">".$i."</a>";
+             echo "<a class=\"page-numbers\" href=\"". $noticia_style1->pagination->dominio .$noticia_style1->pagination->prefix.$i."\">".$i."</a>";
           }
         }
-        if($page < $total_pages) echo "<a class=\"next page-numbers\">»</a>";
+        if($page < $total_pages) echo "<a class=\"next page-numbers\" href=\"".$noticia_style1->pagination->dominio.$noticia_style1->pagination->prefix.($page+1)."\">»</a>";
        ?>
     </div>
