@@ -8,6 +8,7 @@
       <link  rel="stylesheet" href="/serflix/assets/css/components/menu.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticias-style2.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticias-group.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/ultimas-noticias-lateral.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/intereses.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
@@ -19,29 +20,27 @@
 
   <!--Sección de noticias estilo tipo 1-->
   <div class="container">
-    <div class="row">
-       <div class="col-4">
+    <div class="row-xs wrap-xs column align-center-item-xs">
+       <div class="col-lx-4 col-xs-6 col-12">
            <?php include 'componentes/noticias-group.php'; ?>
        </div>
-       <div class="col-4">
+       <div class="col-lx-4 col-xs-6 col-12">
           <?php include 'componentes/noticias-group.php'; ?>
        </div>
-       <div class="col-4">
+       <div class="col-lx-4 col-xs-6 col-12">
           <?php include 'componentes/noticias-group.php'; ?>
        </div>
     </div>
     
-    <div class="row mt-20">
-       <div class="col-8">
+    <div class="row-lx column mt-20">
+       <div class="col-lx-8">
           <?php include_once 'componentes/noticias-style2.php'; ?>
        </div>
-       <div class="col-4">
+       <div class="col-lx-4">
           <div class="w-100-p mx-20">
-            <p class="sidebar-title">Lo más reciente</p>
-            <?php include_once 'componentes/reciente.php'; ?>
+            <?php include_once 'componentes/ultimas-noticias-lateral.php'; ?>
           </div>
           <div class="w-100-p mx-20">
-            <p class="sidebar-title">Tambien te puede interesar</p>
             <?php include_once 'componentes/intereses.php'; ?>
           </div>
        </div>

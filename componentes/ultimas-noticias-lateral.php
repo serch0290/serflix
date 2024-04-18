@@ -1,4 +1,9 @@
 <div fxLayout="column">
+    <p class="title-section">
+      <strong>
+         Lo más reciente
+      </strong>
+    </p>
     <article class="article-reciente">
       <a href="#detalleUltimasNoticias">
         <div class="container-imagen thumbnail-ultimas-noticias">

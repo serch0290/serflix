@@ -47,12 +47,14 @@ h1, h2, h3, h4, h5, h6{
 @media(min-width: 772px){
     .row-sm{ display: flex; flex-direction: row; }
     .column-sm{ display: flex; flex-direction: column;}
+    .wrap-sm{ flex-wrap: wrap; }
 }
 
 @media(min-width: 600px){
     .row-xs{ display: flex; flex-direction: row; }
     .column-xs{ display: flex; flex-direction: column;}
     .wrap-xs{ flex-wrap: wrap; }
+    .align-center-item-xs { align-items : center; justify-content: center; }
 }
 
 .wrap{ flex-wrap: wrap; }
@@ -224,7 +226,7 @@ ul {
     -o-transform-origin: center bottom !important;
     transform-origin: center bottom !important;
     position: relative;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     overflow: hidden;
     transition: transform .2s;
