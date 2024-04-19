@@ -47,7 +47,7 @@ strong{
     color: red;
 }
 
-footer, .list-detail-pasos > li::before {
+footer, .list-detail-pasos > li::before, .title-section::before {
     background: #45523e; /*Color del banner fel footer*/
 }
 

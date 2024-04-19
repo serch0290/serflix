@@ -1,4 +1,4 @@
-<div class="column">
+<article class="column">
     <h1><?php echo $noticia->h1 ?></h1>
     <div class="author w-100-p">
         <div class="author-image">
@@ -121,6 +121,42 @@
             </a>
         </div>   
     </div><!--Final del content-box-->
+    
+    <!--Redes socuales-->
+    <div class="social-media">
+        <a href="#prueba" class="facebook">
+           <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#prueba" class="facebook-messenger">
+          <i class="fa-brands fa-facebook-messenger"></i>
+        </a>
+        <a href="#prueba" class="twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#prueba" class="pinterest">
+           <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+        <a href="#prueba" class="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#prueba" class="tumblr">
+          <i class="fa-brands fa-tumblr"></i>
+        </a>
+        <a href="#prueba" class="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#prueba" class="telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="#prueba" class="email">
+           <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="#prueba" class="reedit">
+          <i class="fa-brands fa-reddit-alien"></i>
+        </a>
+    </div>
+
+
     <div class="author-box" id="author-box">
         <div class="author-box-photo">
             <img src="https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png" />
@@ -131,7 +167,7 @@
         </div>  
     </div>
     <div class="noticias-leidas">
-       <p class="title-noticias-leidas">Lo que mas estan leyendo</p>
+       <p class="title-section">Lo que mas estan leyendo</p>
        <div class="row-xs wrap-xs column">
             <div class="post-thumbnail-leido">
               <a href="#detalleNoticiaA">
@@ -199,4 +235,4 @@
         <?php include_once 'componentes/comentarios.php';?>
     <?php } ?>
     
-</div>
+</article>

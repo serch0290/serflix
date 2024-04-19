@@ -1,3 +1,4 @@
 {
-    "title": "Categoria Perros"
+    "title": "Categoria Perros",
+    "breadcrumb": [{"name": "Inicio", "link": "/serflix"},{"name": "Perros"}]
 }

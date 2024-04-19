@@ -1,3 +1,11 @@
+<?php
+  $request = $_SERVER["REQUEST_URI"];
+  //Quitamos las variables que puedan llegar por url
+  $request_final = explode("?", $request);
+  //Obtenemos toda la configuración de la noticia
+  $category = json_decode(file_get_contents('assets/json' . $request_final[0] . '.json'), false);
+?>
+
 <!doctype html>
 <html lang="es"> 
   <head>
@@ -11,39 +19,53 @@
       <link  rel="stylesheet" href="/serflix/assets/css/components/ultimas-noticias-lateral.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/intereses.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/breadcrums.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
   </head>  
   <body>
   <?php include_once 'componentes/menu.php';?>
-  <!-- Mnesjae principal de la pagina h1 -->
-  <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
+  <div class="column">
+      <!--Sección de noticias estilo tipo 1-->
+      <div class="container">
+         <!-- Mnesjae principal de la pagina h1 -->
+         <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
 
-  <!--Sección de noticias estilo tipo 1-->
-  <div class="container">
-    <div class="row-xs wrap-xs column align-center-item-xs">
-       <div class="col-lx-4 col-xs-6 col-12">
-           <?php include 'componentes/noticias-group.php'; ?>
-       </div>
-       <div class="col-lx-4 col-xs-6 col-12">
-          <?php include 'componentes/noticias-group.php'; ?>
-       </div>
-       <div class="col-lx-4 col-xs-6 col-12">
-          <?php include 'componentes/noticias-group.php'; ?>
-       </div>
-    </div>
-    
-    <div class="row-lx column mt-20">
-       <div class="col-lx-8">
-          <?php include_once 'componentes/noticias-style2.php'; ?>
-       </div>
-       <div class="col-lx-4">
-          <div class="w-100-p mx-20">
-            <?php include_once 'componentes/ultimas-noticias-lateral.php'; ?>
-          </div>
-          <div class="w-100-p mx-20">
-            <?php include_once 'componentes/intereses.php'; ?>
-          </div>
-       </div>
+         <ul class="breadcrums">
+            <?php 
+               foreach ($category->breadcrumb as $breadcrumb => $valor) {
+                  if(!empty($valor->link))
+                     echo "<li><a href=\"{$valor->link}\">{$valor->name}</a></li>";
+                  else
+                     echo "<li><span>{$valor->name}</span></li>";
+               }
+            ?>
+         </ul>
+         
+         <div class="row-xs wrap-xs column align-center-item-xs mt-10">
+            <div class="col-lx-4 col-xs-6 col-12">
+               <?php include 'componentes/noticias-group.php'; ?>
+            </div>
+            <div class="col-lx-4 col-xs-6 col-12">
+               <?php include 'componentes/noticias-group.php'; ?>
+            </div>
+            <div class="col-lx-4 col-xs-6 col-12">
+               <?php include 'componentes/noticias-group.php'; ?>
+            </div>
+         </div>
+         
+         <div class="row-lx column mt-20">
+            <div class="col-lx-8">
+               <?php include_once 'componentes/noticias-style2.php'; ?>
+            </div>
+            <div class="col-lx-4">
+               <div class="w-100-p mx-20">
+                  <?php include_once 'componentes/ultimas-noticias-lateral.php'; ?>
+               </div>
+               <div class="w-100-p mx-20">
+                  <?php include_once 'componentes/intereses.php'; ?>
+               </div>
+            </div>
+         </div>
     </div>
 
   </div>

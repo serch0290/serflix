@@ -23,7 +23,7 @@
   <body onload="irDetalleNoticia();">
   <?php include_once 'componentes/menu.php';?>
   <main class="container p-4">
-    <article class="detail-note">
+    <div class="detail-note">
         <div class="column">
             <ul class="breadcrums">
                 <?php 
@@ -44,7 +44,7 @@
                    </div>
                 </div>
                 <div class="col-lx-4 aside-noticias">
-                   <aside class="w-100-p mx-40">
+                   <aside class="w-100-p mx-40 noticias-lateral">
                    <div>
                         <p class="sidebar-title">Ultimas Noticias</p>
                         <?php include_once 'componentes/ultimas-noticias-lateral.php'; ?>
@@ -57,11 +57,12 @@
                 </div>
             </div><!--Fin del row--> 
         </div><!--Fin del column--> 
-    </article>
+      </div>
   </main>
 
   <?php include_once 'componentes/footer.php';?>
   </body>
+  <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
   <script type="text/javascript" src="/serflix/assets/js/noticia.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
 </html>

@@ -13,7 +13,7 @@ function irDetalleNoticia(){
     let data = window.location.hash;
     if(data){
         $("html, body").animate({
-            scrollTop: $(data).offset().top
+            scrollTop: $(data).offset().top - 70
         }, 1000);
     }
     

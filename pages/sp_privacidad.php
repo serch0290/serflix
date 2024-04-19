@@ -54,4 +54,5 @@
       </main>
       <?php include_once 'componentes/footer.php';?>
   </body>
+  <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
 </html>

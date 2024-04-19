@@ -27,10 +27,19 @@
     margin: 0;
 }
 
+.detail-note{
+    padding-top: 70px;
+}
+
 .detail-note h1{
     font-size: 40px;
     font-weight: bold;
     text-align: justify;
+}
+
+.noticias-lateral{
+    position: sticky;
+    top: 82px;
 }
 
 @media(max-width: 771px){
@@ -204,7 +213,7 @@
     box-shadow: 0 1px 2px rgba(0,0,0,.2);
     background-color: white;
     overflow: hidden;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.8rem;
     border-radius: 5px;
     padding-bottom: 15px;
 }
@@ -412,4 +421,65 @@
     }
 }
 
+/*Estilo de las redes sociales*/
+.social-media{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.social-media a{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.social-media a i{
+    color: white;
+    font-size: 20px;
+}
+
+.facebook{
+    background: #3b5998;
+}
+
+.facebook-messenger{
+    background: #00c6ff;
+}
+
+.twitter{
+    background: #00acee;
+}
+
+.pinterest{
+    background: #c8232c;
+}
+
+.whatsapp{
+    background: #25d366;
+}
+
+.tumblr{
+    background: #34526f;
+}
+
+.linkedin{
+    background: #2867b2;
+}
+
+.telegram{
+    background: #08c;
+}
+
+.email{
+    background: #666;
+}
+
+.reedit{
+    background: #ff5700;
+}
 

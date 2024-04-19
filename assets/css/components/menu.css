@@ -4,6 +4,7 @@
     z-index: 999;
     opacity: 1;
     min-height: 60px;
+    position: fixed;
 }
 
 .site-header img{ width: 280px; height: 40px; vertical-align: middle;}

@@ -1,21 +1,24 @@
 Buscador que busque en noticias.
-Hacer dinamico el paginador, ahorita lo deje estatico
+Hacer dinamico el paginador, ahorita lo deje estatico --Listo
 ver como puedo dejar los texto estaticos para diferemtesa idiomas
-me laflta hacer responsivo las noticias que hice del estilo primero
+me laflta hacer responsivo las noticias que hice del estilo primero --listo
 estoy haciendo muchos componente cada componente con su css, al hacerlo dinamico solo importar los css que son
 hacer un stilo desde la api que tenga todos los font.size, etc con lo hice con scss
 hacer cortador de titulos donde no alcance el espacio que se les asigno
-falta ver su menu se va a quedar fixed
-poner rayita abajo de los titulos como lo hice en reclutamiento de talentos
-hacer topscroll al iniciar cualquier pagina
-en la noticias de alado hacerle con fixed para que siempre salgan al inicio, probablemente tambien aplicar al menú
+falta ver su menu se va a quedar fixed --Listo
+en la noticias de alado hacerle con fixed para que siempre salgan al inicio, probablemente tambien aplicar al menú --Listo
 implementar el bold donde aplique, pero de la fuente, no del uso de la etiqueta strong
-en la parte de comentarios validar que el correo es correcto
-En comentarios guardados, poner una foto generica
-Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo
 En el cms tengo que hacer las imagenes de diferentes tamaños
-Falta poner breadcums en pagina de categoria
-tengo unos h3 y h2 que no van en titulos deben de ir p o span
+Falta poner breadcums en pagina de categoria --Listo 
+tengo unos h3 y h2 que no van en titulos deben de ir p o span --Cuando haga seo ver estructura de la web
+poner rayita abajo de los titulos como lo hice en reclutamiento de talentos -Listo
+hacer topscroll al iniciar cualquier pagina -Listo
+
+
+agregar las redes sociales en la nota y ver que se compartan --Listo solo falta el link revisarlo en la casa
+en la parte de comentarios validar que el correo es correcto-
+En comentarios guardados, poner una foto generica-
+Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo
 hacer icono que cuando estes abajo y les des click te lleve hasta arriba hasta un scrolltop
-agregar las redes sociales en la nota y ver que se compartan
 me falto solo categoria de la noticia hacerla responsiva y botones cuando sea responsivo que salgan en verde.
+cuando en buscador o paginación no se encuetre lo que se esta buscando poner que no se encuentra resultados y poner un listado de noticias.

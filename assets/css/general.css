@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6{
 .text-right{ text-align: right;}
 .flex-center{ justify-content: center;display: flex; align-items: center; }
 .pointer{ cursor: pointer; }
-.content-home{ margin-bottom: 3rem;}
+.content-home{ margin-bottom: 3rem; padding-top: 75px;}
 a { text-decoration: none !important;}
 
 .mr-10{ margin-right: 10px;}
@@ -204,6 +204,7 @@ a { text-decoration: none !important;}
 .p-16{ padding: 16px;}
 .mb-20{ margin-bottom: 20px;}
 .pl-8{ padding-left: 8px; }
+.mt-10 { margin-top: 10px;}
 
 ul {
     padding: 0;
@@ -311,7 +312,20 @@ ul {
     margin-top: 40px;
 }
 
+/*Estilo para los titulos de las secciones*/
 .title-section{
     font-size: 18px;
     margin-bottom: 15px;
 }
+
+
+.title-section::before{
+    content: "";
+    position: absolute;
+    font-size: 19px;
+    width: 50px;
+    height: 5px;
+    margin-top: 25px;
+    border-radius: 5px;
+  }
+

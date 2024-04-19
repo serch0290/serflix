@@ -1,5 +1,5 @@
 <div class="comentarios">
-    <p>
+    <p class="title-section">
         <strong>Comentarios</strong>
     </p>
 
