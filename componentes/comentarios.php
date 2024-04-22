@@ -27,7 +27,7 @@ error_reporting(E_ALL);
                 $class = ($i % 2 == 0) ? 'align-end-items' : '';
                 echo "<div class=\"author-box ".$class."\">
                         <div class=\"author-box-photo-comentario\">
-                          <img src=\"https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png\" />
+                          <img src=\"assets/images/sin-foto-png\" />
                         </div>  
                         <div class=\"author-box-comment\">
                             <strong>".$row["nombre"]."</strong>
@@ -55,7 +55,7 @@ error_reporting(E_ALL);
         <div class="column p-10">
             <div class="row-xs mb-20">
                 <div class="flex w-50-p-xs">
-                   <label class="check-aviso-privacidad"><input type="checkbox" /> He leído y acepto la <a>Política de Privacidad.</a></label><br />
+                   <label class="check-aviso-privacidad"><input type="checkbox" id="check-aviso" /> He leído y acepto la <a>Política de Privacidad.</a></label><br />
                 </div>
                 <div class="flex align-end-items w-50-p-xs">
                    <button class="button-noticia" onclick="guardarComentario()">Publicar Comentario</button>

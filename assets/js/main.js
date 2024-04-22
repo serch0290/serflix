@@ -1,5 +1,13 @@
 $(function() {
     scrollTop();
+    $(window).on('scroll', function(e) {
+        if($(window).scrollTop() >= 200){
+            $('.icon-top').addClass('icon-top-visible');
+        }else{
+            $('.icon-top').removeClass('icon-top-visible');
+        }
+    });
+
 });
 
 function scrollTop(){
@@ -9,13 +17,6 @@ function scrollTop(){
             scrollTop: 0
         }, 1000);
     }
-}
-
-/**
- * Se muestra el icono para regresar al inicio del menú
- */
-function showIconTop(){
-
 }
 
 /**

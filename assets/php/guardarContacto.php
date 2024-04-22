@@ -3,9 +3,9 @@
    ini_set('display_startup_errors', '1');
    error_reporting(E_ALL);
 
-   $dataConecction = json_decode(file_get_contents('assets/json/conexion.json'), false); 
+   $conexion = new ConexionPDO();
+   $con = $conexion->connect();
 
-   $conn = mysqli_connect($dataConecction->server, $dataConecction->username, $dataConecction->password, $dataConecction->database);
    // Check connection
    if (!$conn) {
        die("Connection failed: " . mysqli_connect_error());
