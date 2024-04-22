@@ -10,7 +10,7 @@
         '/serflix/perros/downsizing-formacion-de-galaxias-y-evolucion-estelar-cosmica' => ['Nota', 'sp_noticia.php', ''],
         '/serflix/privacidad' => ['Privacidad', 'sp_privacidad.php'],
         '/serflix/sobre-mi' => ['Acerca de mi', 'sp_about_me.php'],
-        '/serflix/contacto' => ['Contacto', 'sp_contacto.php'],
+        '/serflix/contacto' => ['Contacto', 'sp_contacto.php']
     ];
 
     //var_dump($_SERVER);Como estye puedo saber las variables del servidor
@@ -22,6 +22,11 @@
     /**Validar si la pagina tiene paginacion*/
     if(str_contains($request_final[0], 'pagina')){
        $request_final = explode('/pagina/',$request_final[0]);
+    }
+
+    if(str_contains($request_final[0], '/php/')){
+       include __DIR__.'/assets/php/guardarComentario.php';
+       return;
     }
 
     /**Configuración general del sitio */

@@ -120,38 +120,64 @@
                 </div>
             </a>
         </div>   
-    </div><!--Final del content-box-->
-    
+    </div><!--Final del content-box-->    
     <!--Redes socuales-->
-    <div class="social-media">
+    <div class="social-media wrap">
         <a href="#prueba" class="facebook">
            <i class="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="#prueba" class="facebook-messenger">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/" 
+           class="facebook-messenger"
+           rel="nofollow noopener"
+           target="_blank">
           <i class="fa-brands fa-facebook-messenger"></i>
         </a>
-        <a href="#prueba" class="twitter">
+        <a href="https://x.com/intent/tweet?text=Esto es un ejemplo de mi web&url=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/" 
+           class="twitter"
+           rel="nofollow noopener"
+           target="_blank">
           <i class="fa-brands fa-x-twitter"></i>
         </a>
-        <a href="#prueba" class="pinterest">
+        <a href="https://pinterest.com/pin/create/button/?url=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/&media=https://espaciocosmico.top/wp-content/uploads/Formacion-de-anillos-planetarios-Analisis-de-Saturno-y-otros-ejemplos-150x150.webp" 
+           class="pinterest"
+           rel="nofollow noopener"
+           target="_blank">
            <i class="fa-brands fa-pinterest-p"></i>
         </a>
-        <a href="#prueba" class="whatsapp">
+        <a href="https://wa.me/?text=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos%20-%20https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/" 
+           class="whatsapp"
+           rel="nofollow noopener"
+           target="_blank">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="#prueba" class="tumblr">
+        <a href="https://tumblr.com/widgets/share/tool?canonicalUrl=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/"
+          class="tumblr"
+          rel="nofollow noopener"
+          target="_blank">
           <i class="fa-brands fa-tumblr"></i>
         </a>
-        <a href="#prueba" class="linkedin">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/&title=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos" 
+           class="linkedin"
+           rel="nofollow noopener"
+           target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="#prueba" class="telegram">
+        <a href="https://t.me/share/url?url=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/&text=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos" 
+           class="telegram"
+           rel="nofollow noopener"
+           target="_blank">
           <i class="fa-brands fa-telegram"></i>
         </a>
-        <a href="#prueba" class="email">
+        <a href="mailto:?subject=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos&body=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/" 
+           class="email"
+           rel="nofollow noopener"
+           target="_blank">
            <i class="fa-regular fa-envelope"></i>
         </a>
-        <a href="#prueba" class="reedit">
+        <a href="http://reddit.com/submit?url=https://espaciocosmico.top/formacion-de-anillos-planetarios-analisis-de-saturno-y-otros-ejemplos/&title=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos" 
+           class="reedit"
+           rel="nofollow noopener"
+           target="_blank">
           <i class="fa-brands fa-reddit-alien"></i>
         </a>
     </div>

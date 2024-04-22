@@ -62,3 +62,19 @@
     margin: 0;
 }
 
+@media(max-width: 599px){
+    .article-style2 a {
+        flex-direction: column !important;
+    }
+
+    .article-style2 .article-content {
+        width: inherit !important;
+    }
+
+    .article-style2 .article-content-image {
+        flex: inherit !important;
+        height: 200px;
+        max-width: 100%;
+    }
+}
+

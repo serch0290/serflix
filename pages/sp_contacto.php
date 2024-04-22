@@ -39,22 +39,22 @@
                     <form>
                        <div class="column">
                          <strong>Nombre: </strong>
-                         <input type="text" name="Nombre" placeholder="Nombre" class="form-control"/>
+                         <input type="text" id="name" name="Nombre" placeholder="Nombre" class="form-control"/>
                        </div>
                        <div class="column mt-20">
                          <strong>Correo Electrónico: </strong>
-                         <input type="text" name="email" placeholder="Correo Electrónico" class="form-control"/>
+                         <input type="text" id="mail" name="email" placeholder="Correo Electrónico" class="form-control"/>
                        </div>
                        <div class="column mt-20">
                          <strong>Asunto: </strong>
-                         <input type="text" name="asunto" placeholder="Asunto" class="form-control"/>
+                         <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="form-control"/>
                        </div>
                        <div class="column mt-20">
                          <strong>Mensaje: </strong>
-                         <textarea rows="10" class="form-control" placeholder="Comentario"></textarea>
+                         <textarea rows="10" id="comentario" class="form-control" placeholder="Comentario"></textarea>
                        </div>
                        <div class="column mt-20 align-end-items">
-                         <button class="button-noticia">Enviar</button>
+                         <button class="button-noticia" onclick="guardarContacto()">Enviar</button>
                        </div>
                     </form>
                 </div>
@@ -63,5 +63,7 @@
       </main>
       <?php include_once 'componentes/footer.php';?>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
+  <script type="text/javascript" src="/serflix/assets/js/comentarios.js"></script>
 </html>

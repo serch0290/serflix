@@ -6,7 +6,7 @@
         "name": "pagina",
         "mask": "/serflix/pagina/#",
         "prefix": "/serflix/pagina/",
-        "dominio": "http://localhost:8080",
+        "dominio": "http://localhost",
         "total": 246,
         "paginasMostrar": 5
     }

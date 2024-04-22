@@ -425,12 +425,14 @@
 .social-media{
     display: flex;
     flex-direction: row;
-    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-media a{
     width: 50px;
     height: 50px;
+    margin-bottom: 25px;
     margin-right: 10px;
     display: flex;
     align-items: center;
@@ -440,7 +442,7 @@
 
 .social-media a i{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .facebook{
@@ -483,3 +485,14 @@
     background: #ff5700;
 }
 
+
+@media(max-width: 599px){
+    .social-media a{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .social-media a i{
+        font-size: 20px !important;
+    }
+}

@@ -26,7 +26,7 @@
   <?php include_once 'componentes/menu.php';?>
   <div class="column">
       <!--Sección de noticias estilo tipo 1-->
-      <div class="container">
+      <div class="container container-xs">
          <!-- Mnesjae principal de la pagina h1 -->
          <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
 

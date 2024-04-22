@@ -22,7 +22,7 @@
   </head>  
   <body onload="irDetalleNoticia();">
   <?php include_once 'componentes/menu.php';?>
-  <main class="container p-4">
+  <main class="container p-4 container-xs">
     <div class="detail-note">
         <div class="column">
             <ul class="breadcrums">
@@ -39,30 +39,28 @@
                 <div class="col-lx-8">
                    <?php include_once 'componentes/detail-note.php';?>
                    <div class="intereses-mobile">
-                      <p class="sidebar-title">Lo mas leido</p>
-                      <?php include_once 'componentes/intereses.php'; ?>
+                      <?php include 'componentes/intereses.php'; ?>
                    </div>
                 </div>
                 <div class="col-lx-4 aside-noticias">
                    <aside class="w-100-p mx-40 noticias-lateral">
                    <div>
-                        <p class="sidebar-title">Ultimas Noticias</p>
                         <?php include_once 'componentes/ultimas-noticias-lateral.php'; ?>
                     </div>
                     <div>
-                      <p class="sidebar-title">Lo mas leido</p>
-                      <?php include_once 'componentes/intereses.php'; ?>
+                      <?php include 'componentes/intereses.php'; ?>
                     </div>
                   </aside>
                 </div>
             </div><!--Fin del row--> 
         </div><!--Fin del column--> 
-      </div>
+      </div><!--Fin de detail-note-->
   </main>
 
   <?php include_once 'componentes/footer.php';?>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
   <script type="text/javascript" src="/serflix/assets/js/noticia.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/serflix/assets/js/comentarios.js"></script>
 </html>

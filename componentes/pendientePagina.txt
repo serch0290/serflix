@@ -13,12 +13,22 @@ Falta poner breadcums en pagina de categoria --Listo
 tengo unos h3 y h2 que no van en titulos deben de ir p o span --Cuando haga seo ver estructura de la web
 poner rayita abajo de los titulos como lo hice en reclutamiento de talentos -Listo
 hacer topscroll al iniciar cualquier pagina -Listo
+agregar las redes sociales en la nota y ver que se compartan --listo
+me falto solo categoria de la noticia hacerla responsiva y botones cuando sea responsivo que salgan en verde. --Listo
+hacer icono que cuando estes abajo y les des click te lleve hasta arriba hasta un scrolltop --Listo, solo es validar como se muestra cuando se hacer scroll, checar en pagina de arbitraje
 
 
-agregar las redes sociales en la nota y ver que se compartan --Listo solo falta el link revisarlo en la casa
-en la parte de comentarios validar que el correo es correcto-
-En comentarios guardados, poner una foto generica-
+
+en la parte de comentarios validar que el correo es correcto- En la ofi tengo la expresion regular
+En comentarios guardados, poner una foto generica- En la oficina sacar la foto
 Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo
-hacer icono que cuando estes abajo y les des click te lleve hasta arriba hasta un scrolltop
-me falto solo categoria de la noticia hacerla responsiva y botones cuando sea responsivo que salgan en verde.
 cuando en buscador o paginación no se encuetre lo que se esta buscando poner que no se encuentra resultados y poner un listado de noticias.
+me falta hacer las cookies El ejemplo esta en la ofi
+Hacer un modal mas bonito para las alertas
+Si tengo qhe hacer un desmadre si quiero que tenga comentarios o no;
+Hacer la clase de conexión en php y solo importarla para no duplicar codigo --En la oficina esta el ejemplo
+en consulta de comentarios si sale un error al conexion solo ponerlo como un mensaje genero en vista
+validar el correo --EN la ofi.
+Los comentarios tienen que ser por id de noticia
+En mensaje de comentarioas poner que se va a validar, hacerlo en ofi con gemini
+tambien validar el check de aviso de privacidad

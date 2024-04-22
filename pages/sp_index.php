@@ -18,7 +18,7 @@
   <!-- Mnesjae principal de la pagina h1 -->
   
   <!--Sección de noticias estilo tipo 1-->
-  <div class="container">
+  <div class="container container-xs">
     <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
     <div class="column">
        <?php include_once 'componentes/portada.php' ?>

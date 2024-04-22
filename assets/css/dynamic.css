@@ -47,7 +47,7 @@ strong{
     color: red;
 }
 
-footer, .list-detail-pasos > li::before, .title-section::before {
+footer, .list-detail-pasos > li::before, .title-section::before{
     background: #45523e; /*Color del banner fel footer*/
 }
 
@@ -77,4 +77,13 @@ footer, .list-detail-pasos > li::before, .title-section::before {
     border-left: 4px solid #45523e;
     border-right: 4px solid #45523e;
 }
+
+@media(max-width: 771px){
+    .button-noticia{
+        border: 1px solid #45523e !important;
+        background-color: #45523e !important;
+        color: white !important;
+    }
+}
+
 

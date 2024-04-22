@@ -1,43 +1,56 @@
+<?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+  $dataConecction = json_decode(file_get_contents('assets/json/conexion.json'), false); 
+
+  $conn = mysqli_connect($dataConecction->server, $dataConecction->username, $dataConecction->password, $dataConecction->database);
+  $conn->query("SET lc_time_names = 'es_ES'");
+  $sql = "SELECT Cmnt_Comentario comentario,
+                 Cmnt_Nombre nombre,
+                 DATE_FORMAT(Cmnt_FchaCrcn, \"%d de %b del %Y\") fecha
+          FROM Srfl_Comentarios
+          WHERE Cmnt_EsttCmnt = 1;";
+  $result = $conn->query($sql);
+  $conn->close();
+?>
 <div class="comentarios">
     <p class="title-section">
         <strong>Comentarios</strong>
     </p>
-
-    <div class="comment-list">
-       <div class="author-box">
-            <div class="author-box-photo-comentario">
-                <img src="https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png" />
-            </div>  
-            <div class="author-box-comment">
-                <strong>Sergio Cruz Flores</strong>
-                <p>Esto es solo un comentario haber que sale</p>
-                <p class="date-comment">12 de junio de 2024</p>
-            </div>  
-       </div>
-
-       <div class="author-box align-end-items">
-            <div class="author-box-comment comment-right">
-                <strong>Sergio Cruz Flores</strong>
-                <p>Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.Esto es solo un comentario haber que sale.</p>
-                <p class="date-comment">12 de junio de 2024</p>
-            </div>  
-            <div class="author-box-photo-comentario">
-                <img src="https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png" />
-            </div>  
-       </div>
-    </div>
+       <?php 
+          $i = 0;
+          if ($result->num_rows > 0) {
+            echo "<div class=\"comment-list\">";
+            while($row = $result->fetch_assoc()) {
+                ++$i;
+                $class = ($i % 2 == 0) ? 'align-end-items' : '';
+                echo "<div class=\"author-box ".$class."\">
+                        <div class=\"author-box-photo-comentario\">
+                          <img src=\"https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png\" />
+                        </div>  
+                        <div class=\"author-box-comment\">
+                            <strong>".$row["nombre"]."</strong>
+                            <p>".$row["comentario"]."</p>
+                            <p class=\"date-comment\">".$row["fecha"]."</p>
+                        </div>  
+                      </div>"; 
+            }
+            echo "</div>";
+          }
+       ?>
     <p>Deja un comentario</p>
     <div class="column">
         <div class="row-xs column">
             <div class="w-50-p-xs mr-10-xs mb-10-lt-xs">
-                <input type="text" placeholder="Nombre" class="form-control"/>
+                <input type="text" id="nombre" placeholder="Nombre" class="form-control"/>
             </div>
             <div class="w-50-p-xs">
-               <input type="text" placeholder="Correo Electrónico" class="form-control"/>
+               <input type="text" id="email" placeholder="Correo Electrónico" class="form-control"/>
             </div>
         </div>
         <div style="margin-top: 20px">
-            <textarea rows="8" class="form-control" placeholder="Comentario"></textarea>
+            <textarea rows="8" id="mensaje" class="form-control" placeholder="Comentario"></textarea>
         </div>
         <div class="column p-10">
             <div class="row-xs mb-20">
@@ -45,7 +58,7 @@
                    <label class="check-aviso-privacidad"><input type="checkbox" /> He leído y acepto la <a>Política de Privacidad.</a></label><br />
                 </div>
                 <div class="flex align-end-items w-50-p-xs">
-                   <button class="button-noticia">Publicar Comentario</button>
+                   <button class="button-noticia" onclick="guardarComentario()">Publicar Comentario</button>
                 </div>
             </div>
             

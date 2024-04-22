@@ -1,3 +1,6 @@
+<div class="icon-top align-center-items flex" onclick="irInicio()">
+    <i class="fa-solid fa-caret-up"></i>
+</div>
 <footer>
   <div class="container">
     <div class="content-footer">
