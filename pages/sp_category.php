@@ -19,6 +19,7 @@
       <link  rel="stylesheet" href="/serflix/assets/css/components/ultimas-noticias-lateral.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/intereses.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/cookies.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/breadcrums.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
   </head>  
@@ -69,7 +70,7 @@
     </div>
 
   </div>
-  
+  <?php include_once 'componentes/cookies.php';?>
   <?php include_once 'componentes/footer.php';?>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>

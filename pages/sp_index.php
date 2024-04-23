@@ -1,3 +1,6 @@
+<?php 
+    $home = json_decode(file_get_contents('assets/json/home.json'), false);
+?>
 <!doctype html>
 <html lang="es"> 
   <head>
@@ -10,6 +13,7 @@
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticias.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticias-recomended.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/portada.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/cookies.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
   </head>  
@@ -19,7 +23,7 @@
   
   <!--Sección de noticias estilo tipo 1-->
   <div class="container container-xs">
-    <?php if($configuracion->mensajePrincipal){ include_once 'componentes/content-home.php'; }?>
+    <?php include_once 'componentes/content-home.php'; ?>
     <div class="column">
        <?php include_once 'componentes/portada.php' ?>
     </div>  

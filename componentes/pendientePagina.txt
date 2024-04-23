@@ -23,7 +23,7 @@ en la parte de comentarios validar que el correo es correcto- Listo solo fanto p
 En comentarios guardados, poner una foto generica- Listo probar en la casa
 Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo
 cuando en buscador o paginación no se encuetre lo que se esta buscando poner que no se encuentra resultados y poner un listado de noticias.
-me falta hacer las cookies El ejemplo esta en la ofi
+me falta hacer las cookies - Listo
 Hacer un modal mas bonito para las alertas --Listo
 Si tengo qhe hacer un desmadre si quiero que tenga comentarios o no;
 Hacer la clase de conexión en php y solo importarla para no duplicar codigo --Listo en contacto solo me falta probarlo
@@ -33,3 +33,5 @@ Los comentarios tienen que ser por id de noticia
 En mensaje de comentarioas poner que se va a validar. Listo
 tambien validar el check de aviso de privacidad --listo solo falta probar
 modal tratar de poner el efectito que agregue
+
+En todos los php agregue el request, pero ya lo tengo desde el index, irlo quitando de uno por uno y validar.
