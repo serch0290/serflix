@@ -19,11 +19,6 @@
 
 <div class="row-lx column">
     <div class="col-lx-6 col-12 mb-20-lt-lg">
-        <?php 
-             while($row = $result->fetch_assoc()) {
-                
-             }
-        ?>
         <article class="article-principal">
           <a class="container-noticia" href="#VeADetalleNoticia">
               <div class="container-imagen content-image-principal">

@@ -35,3 +35,4 @@ tambien validar el check de aviso de privacidad --listo solo falta probar
 modal tratar de poner el efectito que agregue
 
 En todos los php agregue el request, pero ya lo tengo desde el index, irlo quitando de uno por uno y validar.
+Hacer tabla de imagenes y relacionarla con la de noticias, resoluciones de imagenes que va a tener la nota

@@ -5,15 +5,15 @@
 
 
   class Conexion{
-        public $conn;
 
         public function connect(){
             try {
                 $dataConecction = json_decode(file_get_contents('assets/json/conexion.json'), false); 
-                $this->conn = mysqli_connect($dataConecction->server, $dataConecction->username, $dataConecction->password, $dataConecction->database);
+                $conn = mysqli_connect($dataConecction->server, $dataConecction->username, $dataConecction->password, $dataConecction->database);
+                return $conn;
             } catch (PDOException $e){
                 var_dump($e);
-                $this->conn = false;
+                return null;
             } 
         }
 
