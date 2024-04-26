@@ -15,15 +15,11 @@
               FROM Srfl_Noticias
               WHERE Ntcs_Estatus = 1  AND Ntcs_TipoCtgr = 1 AND Ntcs_EsttPblc = 2;";
   $result = $conn->query($sql);
+  $row = mysqli_fetch_row($result);
 ?>
 
 <div class="row-lx column">
     <div class="col-lx-6 col-12 mb-20-lt-lg">
-        <?php 
-             while($row = $result->fetch_assoc()) {
-                
-             }
-        ?>
         <article class="article-principal">
           <a class="container-noticia" href="#VeADetalleNoticia">
               <div class="container-imagen content-image-principal">
