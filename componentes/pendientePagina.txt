@@ -36,3 +36,12 @@ modal tratar de poner el efectito que agregue
 
 En todos los php agregue el request, pero ya lo tengo desde el index, irlo quitando de uno por uno y validar.
 Hacer tabla de imagenes y relacionarla con la de noticias, resoluciones de imagenes que va a tener la nota
+
+Dejar alturas fijas en noticias de portada.
+Hacer lo de imagenes de diferentes resoluciones
+ver como hacer lo de paginados pero ahora si con datos mas reales --Listo
+las url de las noticias, ver como las voy a dejar en los links --Listo
+el acerca de nosotros, tambien como va a ser, seguramente con un json
+Me falta definir las imagenes, y las resoluciones que voy a ir poniendo de acuerdo al responsivo
+tal vez puedo solo dejar una sola consulta que traiga todas las noticias y de ahi ya repartir como sea necesario --Listo
+poner condicion de si lleva paginacion y no y poder reutilizarlo --Listo

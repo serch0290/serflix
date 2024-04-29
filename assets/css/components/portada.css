@@ -7,6 +7,15 @@
     max-height: 600px;
 }
 
+#portada a {
+    min-height: 580px;
+}
+
+#detalle-portada a{
+    min-height: 285px !important;
+    max-height: 285px !important;
+}
+
 .content-image-principal{
     max-height: 420px;
 }
