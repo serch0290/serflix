@@ -45,3 +45,4 @@ el acerca de nosotros, tambien como va a ser, seguramente con un json
 Me falta definir las imagenes, y las resoluciones que voy a ir poniendo de acuerdo al responsivo
 tal vez puedo solo dejar una sola consulta que traiga todas las noticias y de ahi ya repartir como sea necesario --Listo
 poner condicion de si lleva paginacion y no y poder reutilizarlo --Listo
+implementar seguridad en el sitio, encriptacion de informacion, etc.
