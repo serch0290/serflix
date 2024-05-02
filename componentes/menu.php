@@ -1,3 +1,7 @@
+<?php 
+   $menu = json_decode(file_get_contents('assets/json/menu.json'), false);
+?>
+
 <header class="site-header green-bg">
    <div class="container h-60">
    <!--<i class="fa-solid fa-align-justify"></i>-->
@@ -18,43 +22,31 @@
          </div>
          <!--Aqui va el menu de opciones-->
          <ul class="menu">
-            <li class="link-menu">
-                <a href="#menuA" >
-                    <span class="menu-title">MenuC</span>
-                </a>
-                <ul class="menu-dropdown">
-                    <li>
-                        <a href="#submenua">submenu a</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#menuB" class="link-menu">
-                  <span class="menu-title">MenuC</span>
-                </a>
-            </li>
-            <li>
-                <a href="#menuC" class="link-menu">
-                   <span class="menu-title">MenuC</span>
-                </a>
-            </li>
-            <li>
-                <a href="#menuA" class="link-menu">
-                    <span class="menu-title">MenuC</span>
-                </a>
-            </li>
-            <li>
-                <a href="#menuA" class="link-menu">
-                    <span class="menu-title">MenuD</span>
-                </a>
-            </li>
-            <li>
-                <a href="#menuA" class="link-menu">
-                    <span class="menu-title">MenuE</span>
-                </a>
-            </li>
-         </ul>
+          <?php 
+            foreach($menu as $key=> $valor){
+                echo "<li class=\"link-menu\">";
+                if(empty($valor->children)){
+                    echo "<a href=\"".$valor->url."\" >
+                            <span class=\"menu-title\">".$valor->name."</span>
+                          </a>";
+                }
 
+                if(!empty($valor->children)){
+                    echo "<a>
+                            <span class=\"menu-title\">".$valor->name."</span>
+                         </a>
+                        <ul class=\"menu-dropdown\">";
+                        foreach($valor->children as $key => $submenu){
+                            echo "<li>
+                                    <a href=\"".$submenu->url."\">".$submenu->name."</a>
+                                </li>";
+                        }
+                    echo "</ul>"; 
+                }
+                echo "</li>";
+            }
+          ?>
+        </ul>
           <!--Menú responsivo-->
           <div class="slide-menu green-bg">
             <div class="slide-menu-header">
@@ -68,46 +60,30 @@
             <div class="slide-menu-flex">
                 <div class="mobile-menu">
                     <ul class="main-mobile-nav">
-                        <li class="has-sub" onclick="expandSubMenu(this)">
-                            <a >MenuC</a>
-                               <ul class="sub-menu m-sub">
-                                    <li>
-                                        <a  href="#submenuA">submenu a</a>
-                                    </li>
-                                    <li>
-                                        <a>submenu b</a>
-                                    </li>
-                                    <li>
-                                        <a>submenu c</a>
-                                    </li>
-                                    <li>
-                                        <a>submenu d</a>
-                                    </li>
-                                </ul>
-                            <div class="submenu-toggle"></div>
-                        </li>
-                        <li>
-                            <a>
-                               MenuC
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                               MenuC
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                               MenuC
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                               MenuC
-                            </a>
-                        </li>
+                        <?php
+                            foreach($menu as $key=> $valor){
+                                if(empty($valor->children)){
+                                    echo "<li>
+                                            <a href=\"".$valor->url."\">".$valor->name."</a>";
+                                }
+                            
+                            if(!empty($valor->children)){
+                                echo "<li class=\"has-sub\" onclick=\"expandSubMenu(this)\">
+                                            <a>".$valor->name."</a>
+                                            <ul class=\"sub-menu m-sub\">";
+                                foreach($valor->children as $key => $submenu){
+                                            echo "<li>
+                                                    <a  href=\"".$submenu->url."\">".$submenu->name."</a>
+                                                </li>";
+
+                                }
+                                echo "</ul>
+                                        <div class=\"submenu-toggle\"></div>";
+                            }
+                            echo "</li>";
+                            } 
+                        ?>
                     </ul>
-                
                 </div>
             </div>
           </div>

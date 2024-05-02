@@ -75,17 +75,16 @@
        <div class="col-lx-8 col-12">
           <div class="mx-20 w-100-p mt-20">
              <?php include_once 'componentes/about-us.php' ?>
-             <div class="mt-20">
-               <?php include_once 'componentes/noticias-style1.php'; ?>
-             </div>
-
           </div>  
        </div>
        <div class="col-lx-4 col-12">
           <?php include_once 'componentes/noticias-recomended.php'; ?>
        </div>
     </div>
-  </div>
+    <div class="column">
+      <?php include_once 'componentes/noticias-style1.php'; ?>
+    </div>
+  </div><!--Fin del container-->
   
   <?php include_once 'componentes/footer.php';?>
   <?php include_once 'componentes/cookies.php';?>

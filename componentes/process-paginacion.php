@@ -5,7 +5,7 @@
         $page = 0;
         $limiteInferior = 0;
         $limiteSuperior = 0;
-        $totalNoticias = $pagination->total - 8;
+        $totalNoticias = $pagination->total;
         $total_pages = (int)($totalNoticias / $pagination->paginasMostrar);  
       
 

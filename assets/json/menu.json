@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Perros",
+        "url": "/serflix/perros",
+        "children" : [
+          {
+            "name": "Pastor",
+            "url": "/serflix/perros/pastor"
+          },
+          {
+            "name": "Callejero",
+            "url": "/serflix/perros/callejero"
+          }
+
+        ]
+    },
+    {
+        "name": "Gatos",
+        "url": "/serflix/gatos"
+    },
+    {
+        "name": "Loros",
+        "url": "/serflix/loros"
+    },
+    {
+        "name": "Aves",
+        "url": "/serflix/aves"
+    },
+    {
+        "name": "Leon",
+        "url": "/serflix/leon"
+    },
+    {
+        "name": "Mapache",
+        "url": "/serflix/mapache"
+    }
+]

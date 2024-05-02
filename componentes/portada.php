@@ -35,7 +35,7 @@
                    $descripcion = $noticiasPortada[$i]["descripcion"];
                 }
                 
-                echo "<div class=\"col-xs-6 col-12 mb-20-lt-lg\">
+                echo "<div class=\"col-xs-6 col-12\">
                          <article id=\"detalle-portada\" class=\"article-principal\">
                             <a class=\"container-noticia\" href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$noticiasPortada[$i]["url"]."\">
                                 <div class=\"container-imagen image-thumb-image\">

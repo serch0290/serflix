@@ -1,10 +1,21 @@
+<?php 
+   $aboutUs = json_decode(file_get_contents('assets/json/serflix/about-us.json'), false);
+?>
+
 <div class="column mb-40 about-us-general">
    <div class="w-100-p text-center">
-      <img src="https://heresajoke.com/wp-content/uploads/2023/09/che-lewis.jpg"/>
+      <?php 
+        echo "<img src=\"".$aboutUs->img."\"/>";
+      ?>
    </div>
-   <p class="font-size-20 text-center"><strong>Titulo de acerca de nosotros</strong></p>
-   <p class="conten-about-us">Hey there! I’m Che Lewis, an avid Monty Python fan, lover of jokes and puns and someone who always tries to make others happy and smile!</p>
-   <p class="conten-about-us">I have loved jokes and puns since I was about 8 when I discovered books with 1001 jokes. I have never been much of a reader but I always loved reading those joke books with their fun hand sketched cartoon drawings.</p>
+   <p class="font-size-20 text-center">
+      <strong>
+         <?php echo $aboutUs->title; ?>
+      </strong>
+   </p>
+   <p class="conten-about-us">
+      <?php echo $aboutUs->descripcion; ?>
+   </p>
    <div class="w-100-p text-center">
       <button class="button-noticia">Acerca de Nosotros</button>
    </div>
