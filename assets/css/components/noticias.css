@@ -1,15 +1,17 @@
 .article{
     padding-left: 5px;
     padding-right: 5px;
-    padding-bottom: 10px;
+    display: flex;
+    height: 100%;
 }
 
 .article a{
-    flex-direction: column;
+    width: 100%;
 }
 
 .article-content-image{
     max-height: 196px;
+    min-height: 196px;
 }
 
 .article-image:hover {
@@ -17,6 +19,7 @@
 }
 
 .article-image{
+    height: 196px;
     height: 196px;
 }
 
@@ -29,11 +32,12 @@
 }
 
 .article-content .title-article-content{
-  font-size: 18px !important;
+  font-size: 16px !important;
   text-align: center;
 }
 
 .article-content h4{
+   font-size: 14px;
    padding: 0!important;
    margin: 0!important;
 }

@@ -1,3 +1,15 @@
 {
-    "h1": "El rincón perfecto para los amantes de las adorables mascotas domésticas h1"
+    "h1": "El rincón perfecto para los amantes de las adorables mascotas domésticas h1",
+    "noticias_style1": {
+        "title": "Todas las noticias",
+        "mascara": "/serflix/pagina/{idPagina}",
+        "pagination": {
+           "name": "pagina",
+           "mask": "/serflix/pagina/#",
+           "prefix": "/serflix/pagina/",
+           "dominio": "http://localhost",
+           "total": 9,
+           "paginasMostrar": 5
+        }
+    }
 }

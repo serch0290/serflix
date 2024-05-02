@@ -1,13 +1,12 @@
 Buscador que busque en noticias.
 Hacer dinamico el paginador, ahorita lo deje estatico --Listo
 ver como puedo dejar los texto estaticos para diferemtesa idiomas
-me laflta hacer responsivo las noticias que hice del estilo primero --listo
+me laflta hacer responsivo las noticias que hice del estilo primero --Listo
 estoy haciendo muchos componente cada componente con su css, al hacerlo dinamico solo importar los css que son
-hacer un stilo desde la api que tenga todos los font.size, etc con lo hice con scss
-hacer cortador de titulos donde no alcance el espacio que se les asigno
+hacer cortador de descripciones donde no alcance el espacio que se les asigno
 falta ver su menu se va a quedar fixed --Listo
 en la noticias de alado hacerle con fixed para que siempre salgan al inicio, probablemente tambien aplicar al menú --Listo
-implementar el bold donde aplique, pero de la fuente, no del uso de la etiqueta strong
+implementar el bold donde aplique, pero de la fuente, no del uso de la etiqueta strong --Listo
 En el cms tengo que hacer las imagenes de diferentes tamaños
 Falta poner breadcums en pagina de categoria --Listo 
 tengo unos h3 y h2 que no van en titulos deben de ir p o span --Cuando haga seo ver estructura de la web
@@ -16,7 +15,7 @@ hacer topscroll al iniciar cualquier pagina -Listo
 agregar las redes sociales en la nota y ver que se compartan --listo
 me falto solo categoria de la noticia hacerla responsiva y botones cuando sea responsivo que salgan en verde. --Listo
 hacer icono que cuando estes abajo y les des click te lleve hasta arriba hasta un scrolltop --Listo
-
+seria hacer el icono chiquito que sale en la pestaña de la pagina, ya cuando sea la página real.
 
 
 en la parte de comentarios validar que el correo es correcto- Listo solo fanto probarlo en casa
@@ -37,12 +36,14 @@ modal tratar de poner el efectito que agregue
 En todos los php agregue el request, pero ya lo tengo desde el index, irlo quitando de uno por uno y validar.
 Hacer tabla de imagenes y relacionarla con la de noticias, resoluciones de imagenes que va a tener la nota
 
-Dejar alturas fijas en noticias de portada.
+Dejar alturas fijas en noticias de portada. --Listo
 Hacer lo de imagenes de diferentes resoluciones
 ver como hacer lo de paginados pero ahora si con datos mas reales --Listo
 las url de las noticias, ver como las voy a dejar en los links --Listo
-el acerca de nosotros, tambien como va a ser, seguramente con un json
+el acerca de nosotros, tambien como va a ser, seguramente con un json --Listo
 Me falta definir las imagenes, y las resoluciones que voy a ir poniendo de acuerdo al responsivo
 tal vez puedo solo dejar una sola consulta que traiga todas las noticias y de ahi ya repartir como sea necesario --Listo
 poner condicion de si lleva paginacion y no y poder reutilizarlo --Listo
 implementar seguridad en el sitio, encriptacion de informacion, etc.
+Me falta hacer dinamico con json del menu y footer y que funcione el buscador y cuando pongan una pagian que no existe en el buscador tambinen poner pagina de que no existe
+pagina no encontrada, hacer sección de noticias a mostrar

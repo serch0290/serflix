@@ -7,13 +7,17 @@
     max-height: 600px;
 }
 
+
 #portada a {
     min-height: 580px;
+    max-height: 580px;
 }
 
-#detalle-portada a{
-    min-height: 285px !important;
-    max-height: 285px !important;
+@media(min-width: 1100px){
+    #detalle-portada a{
+        min-height: 285px !important;
+        max-height: 285px !important;
+    }
 }
 
 .content-image-principal{
@@ -58,6 +62,13 @@
 
 .image-thumb-image{
     max-height: 150px;
+}
+
+@media(max-width: 1099px){
+    .image-thumb-image, .article-image-thumb{
+        min-height: 190px !important;
+        max-height: 190px !important;
+    }
 }
 
 .article-image-thumb {
