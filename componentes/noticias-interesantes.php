@@ -1,4 +1,8 @@
 
+<?php 
+   $sql = "";
+?>
+
 <p class="title-section">Tal vez te puede interesar</p>
 <div class="row wrap align-center-items">
     <div class="col-sm-6 mb-20">
