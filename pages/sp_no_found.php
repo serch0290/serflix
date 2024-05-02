@@ -18,8 +18,7 @@
       <p>No se encontraron resultados<p>
     </div>
     <div class="mt-20">
-        <p>Tal vez te puede interesar</p>
-        <?php include_once 'componentes/noticias-style1.php'; ?>
+        <?php include_once 'componentes/noticias-interesantes.php'; ?>
     </div>
   </div>
   <?php include_once 'componentes/footer.php';?>
