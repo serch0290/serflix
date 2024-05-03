@@ -47,3 +47,4 @@ poner condicion de si lleva paginacion y no y poder reutilizarlo --Listo
 implementar seguridad en el sitio, encriptacion de informacion, etc.
 Me falta hacer dinamico con json del menu y footer y que funcione el buscador y cuando pongan una pagian que no existe en el buscador tambinen poner pagina de que no existe
 pagina no encontrada, hacer sección de noticias a mostrar
+los metadatos que estoy agregando en el index, agregarlos en todas las paginas
