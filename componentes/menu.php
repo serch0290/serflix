@@ -14,7 +14,7 @@
        </div>
        <div>
          <!--Aqui va el buscador-->
-         <input type="text" placeholder="Buscar" class="input-search" />
+         <input type="text" placeholder="Buscar" class="input-search" onClick="buscador()" />
        </div>
        <div class="nav-active">
          <div class="show-mobile-menu white-fg">

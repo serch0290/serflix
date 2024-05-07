@@ -78,3 +78,11 @@ function _setCookie(){
 function deleteCookie(){
     setCookie('SF_COOKIE_CONSENT', -1, '');
 }
+
+function buscador(){
+    var buscador = $(".input-search").val();
+
+    if(buscador){
+       window.location.href = "http://localhost/serflix?b="+buscador;
+    }
+}

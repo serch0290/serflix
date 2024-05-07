@@ -66,6 +66,11 @@
         }
     }
 
+    if (isset($_GET["b"])){
+        include __DIR__.'/pages/sp_buscador.php';
+        return;
+    }
+
     if(str_contains($request_final[0], '/php/')){
        include __DIR__.'/assets/php/guardarComentario.php';
        return;

@@ -46,5 +46,5 @@ tal vez puedo solo dejar una sola consulta que traiga todas las noticias y de ah
 poner condicion de si lleva paginacion y no y poder reutilizarlo --Listo
 implementar seguridad en el sitio, encriptacion de informacion, etc.
 Me falta hacer dinamico con json del menu y footer y que funcione el buscador y cuando pongan una pagian que no existe en el buscador tambinen poner pagina de que no existe
-pagina no encontrada, hacer sección de noticias a mostrar
+pagina no encontrada, hacer sección de noticias a mostrar --Listo
 los metadatos que estoy agregando en el index, agregarlos en todas las paginas
