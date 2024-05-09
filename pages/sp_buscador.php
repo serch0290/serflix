@@ -4,6 +4,7 @@
     $conn = $conexion->connect();
     $conn->query("SET lc_time_names = 'es_ES'");
     $parametro = $_GET["b"]; 
+    $home = json_decode(file_get_contents('assets/json/busqueda.json'), false);
 
     $sql = "SELECT Ntcs_IDNoticia idNoticia, 
                    Ntcs_Titulo titulo, 
@@ -23,8 +24,14 @@
             ORDER BY Ntcs_IDNoticia DESC;";
     
     $resBuscador = $conn->query($sql);
-    $rowNoticias = mysqli_fetch_all($resBuscador, MYSQLI_ASSOC);  
-    
+    $rowNoticiasCompleto = mysqli_fetch_all($resBuscador, MYSQLI_ASSOC);  
+
+    if(count($rowNoticiasCompleto) < 6){
+       $home->noticias_style1->pagination = false;
+    }else{
+       $home->noticias_style1->pagination->total = count($rowNoticiasCompleto);
+    }
+
 ?>
 
 <!doctype html>
@@ -47,7 +54,13 @@
       <p class="text-center font-size-22">Resultados de tú búsqueda: <strong><?php echo $_GET["b"];?></strong><p>
     </div>
     <div class="mt-20">
-        
+       <?php 
+          if(count($rowNoticiasCompleto) > 0){
+             include_once 'componentes/noticias-style1.php'; 
+          }else{
+            echo "<p>No se encontraron resultados.</p>";
+          }
+         ?>
     </div>
   </div>
   <?php include_once 'componentes/footer.php';?>

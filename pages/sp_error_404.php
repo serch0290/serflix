@@ -19,7 +19,7 @@
       <p>Página no encontrada<p>
     </div>
     <div class="mt-20">
-        <?php include_once 'componentes/noticias-interesantes.php'; ?>
+       <?php include_once 'componentes/noticias-interesantes.php'; ?>
     </div>
   </div>
   <?php include_once 'componentes/footer.php';?>

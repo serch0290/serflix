@@ -48,3 +48,6 @@ implementar seguridad en el sitio, encriptacion de informacion, etc.
 Me falta hacer dinamico con json del menu y footer y que funcione el buscador y cuando pongan una pagian que no existe en el buscador tambinen poner pagina de que no existe
 pagina no encontrada, hacer sección de noticias a mostrar --Listo
 los metadatos que estoy agregando en el index, agregarlos en todas las paginas
+Ve que metas poner en buscador
+falta poner el componente de cookies en todas las paginas
+en consultas si no tiene datos poner sin resultados o alguna cosa asi.

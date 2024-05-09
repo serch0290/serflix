@@ -14,7 +14,8 @@
        </div>
        <div>
          <!--Aqui va el buscador-->
-         <input type="text" placeholder="Buscar" class="input-search" onClick="buscador()" />
+         <input type="text" placeholder="Buscar" class="input-search" />
+         <i class="fa-solid fa-magnifying-glass" style="cursor: pointer; color: white;" onclick="buscador()"></i>
        </div>
        <div class="nav-active">
          <div class="show-mobile-menu white-fg">

@@ -12,7 +12,6 @@
         include_once 'componentes/process-paginacion.php';
     }
 
-    array_splice($rowNoticiasCompleto, 0, 3);
 ?>
 
 <p class="title-section">

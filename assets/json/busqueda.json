@@ -1,0 +1,13 @@
+{
+    "noticias_style1": {
+        "title": "Resultados de la búsqueda",
+        "mascara": "/serflix/pagina/{idPagina}",
+        "pagination": {
+           "name": "pagina",
+           "mask": "/serflix/pagina/#",
+           "prefix": "/serflix/pagina/",
+           "dominio": "http://localhost",
+           "paginasMostrar": 5
+        }
+    }
+}

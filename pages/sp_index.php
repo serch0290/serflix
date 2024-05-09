@@ -43,7 +43,7 @@
 
     $noticiasPortada = array_values(array_filter($rowNoticiasCompleto, 'filterNoticias'));
     $rowNoticiasCompleto = array_values(array_filter($rowNoticiasCompleto, 'filterNoticiasTotal'));
-    
+    array_splice($rowNoticiasCompleto, 0, 3);
 ?>
 <!doctype html>
 <html lang="es"> 

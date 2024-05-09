@@ -79,10 +79,12 @@ function deleteCookie(){
     setCookie('SF_COOKIE_CONSENT', -1, '');
 }
 
+/**Redirecciona a la vista del buscador */
 function buscador(){
     var buscador = $(".input-search").val();
+    console.log('buscador: ', buscador);
 
     if(buscador){
-       window.location.href = "http://localhost/serflix?b="+buscador;
+       window.location.href = "http://localhost:8080/serflix/?b="+buscador;
     }
 }
