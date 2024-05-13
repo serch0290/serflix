@@ -1,5 +1,5 @@
 <div class="row-lx column">
-    <div class="col-lx-6 col-12 mb-20-lt-lg">
+    <div class="col-lx-6 col-12 mb-20-lt-lx">
         <article id="portada" class="article-principal">
           <?php 
             echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiasPortada[0]["url"]."\">

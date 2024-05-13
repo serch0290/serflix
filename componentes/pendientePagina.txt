@@ -52,3 +52,20 @@ Ve que metas poner en buscador
 falta poner el componente de cookies en todas las paginas
 en consultas si no tiene datos poner sin resultados o alguna cosa asi.
 Poner bien el icono del buscador y imagen que venga de un json tambien.
+
+
+
+https://mascotasadorables.top/wp-content/uploads/2023/08/52-1024x538.jpg.webp 1024w, 
+https://mascotasadorables.top/wp-content/uploads/2023/08/52-300x158.jpg.webp 300w, 
+https://mascotasadorables.top/wp-content/uploads/2023/08/52-768x403.jpg.webp 768w, 
+https://mascotasadorables.top/wp-content/uploads/2023/08/52.jpg.webp 1200w   -1250
+
+
+1250px
+1100px
+992px
+772px
+600px
+
+
+(max-width: 1024px) 100vw, 1024px

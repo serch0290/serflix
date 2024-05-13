@@ -136,7 +136,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media(max-width: 1099px){
-    
+    .mb-20-lt-lx{
+        margin-bottom: 20px;
+      }
 }
 
 @media(max-width: 991px){
