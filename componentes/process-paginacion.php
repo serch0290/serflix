@@ -22,7 +22,7 @@
         }else{
             $page = 1; //Si no tienen el prefijo quiere decir que estamos en la primera pagina
         }
-
+        
         /* Obtenemos el limite inferior*/
         if(($page - 2) >= 1){
             $limiteInferior = ($page - 2);

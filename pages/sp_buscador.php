@@ -1,9 +1,13 @@
 <?php 
     require_once('assets/php/lib/Conexion.php');
+
+    $request = $_SERVER["REQUEST_URI"];
+    //Quitamos las variables que puedan llegar por url
+    $request_final = explode("?", $request);
+
     $conexion = new Conexion();
     $conn = $conexion->connect();
     $conn->query("SET lc_time_names = 'es_ES'");
-    $parametro = $_GET["b"]; 
     $home = json_decode(file_get_contents('assets/json/busqueda.json'), false);
 
     $sql = "SELECT Ntcs_IDNoticia idNoticia, 
@@ -30,8 +34,18 @@
        $home->noticias_style1->pagination = false;
     }else{
        $home->noticias_style1->pagination->total = count($rowNoticiasCompleto);
+       $totalNoticias = count($rowNoticiasCompleto);
     }
 
+    /**Se valida si tiene paginación */
+    if(!empty($isPagination)){
+        $paginationValidation = $home->noticias_style1->pagination;
+        include_once 'componentes/validationPagination.php';
+        if($noFound){
+           include __DIR__ .'/sp_no_found.php';
+           return;
+        }
+     }
 ?>
 
 <!doctype html>

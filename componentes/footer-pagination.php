@@ -12,9 +12,9 @@
           if($i == $page){
              echo "<strong class=\"page-numbers\">".$i."</strong>";
           }else if($i == 1){
-             echo "<a class=\"page-numbers\" href=\"". $pagination->dominio. '/serflix'. "\">".$i."</a>";
+             echo "<a class=\"page-numbers\" href=\"". $pagination->dominio. '/serflix'.(isset($parametro) ? '?b='.$parametro: ''). "\">".$i."</a>";
           }else{
-             echo "<a class=\"page-numbers\" href=\"". $pagination->dominio .$pagination->prefix.$i."\">".$i."</a>";
+             echo "<a class=\"page-numbers\" href=\"". $pagination->dominio .$pagination->prefix.$i.(isset($parametro) ? '?b='.$parametro: '')."\">".$i."</a>";
           }
         }
         if($page < $total_pages) echo "<a class=\"next page-numbers\" href=\"".$pagination->dominio.$pagination->prefix.($page+1)."\">»</a>";

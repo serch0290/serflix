@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Sobre mi",
+        "url": "/serflix/sobre-mi"
+    },
+    {
+        "name": "Aviso Legal",
+        "url": "/serflix/contacto"
+    },
+    {
+        "name": "Política de Cookies",
+        "url": "/serflix/contacto"
+    },
+    {
+        "name": "Política de privacidad",
+        "url": "/serflix/privacidad"
+    },
+    {
+        "name": "Contacto",
+        "url": "/serflix/contacto"
+    }
+]

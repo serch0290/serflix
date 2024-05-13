@@ -44,6 +44,20 @@
     $noticiasPortada = array_values(array_filter($rowNoticiasCompleto, 'filterNoticias'));
     $rowNoticiasCompleto = array_values(array_filter($rowNoticiasCompleto, 'filterNoticiasTotal'));
     array_splice($rowNoticiasCompleto, 0, 3);
+
+    $totalNoticias = count($rowNoticiasCompleto);
+
+    if($home->noticias_style1->pagination) $home->noticias_style1->pagination->total = $totalNoticias;
+
+    /**Se valida si tiene paginación */
+    if(!empty($isPagination)){
+       $paginationValidation = $home->noticias_style1->pagination;
+       include_once 'componentes/validationPagination.php';
+       if($noFound){
+          include __DIR__ .'/sp_no_found.php';
+          return;
+       }
+    }
 ?>
 <!doctype html>
 <html lang="es"> 

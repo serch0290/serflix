@@ -1,3 +1,9 @@
+<?php
+
+   $footer = json_decode(file_get_contents('assets/json/footer.json'), false);
+
+?>
+
 <div class="icon-top align-center-items flex" onclick="irInicio()">
     <i class="fa-solid fa-caret-up"></i>
 </div>
@@ -11,21 +17,13 @@
         </div>
         <div class="widget-area">
             <ul class="menu-footer">
-                <li>
-                    <a>MenuC</a>
-                </li>
-                <li>
-                    <a>MenuD</a>
-                </li>
-                <li>
-                    <a>MenuD</a>
-                </li>
-                <li>
-                    <a>MenuF</a>
-                </li>
-                <li>
-                    <a>MenuG</a>
-                </li>
+                <?php 
+                  foreach($footer as $key=> $valor){
+                    echo "<li>
+                              <a href=\"".$valor->url."\">".$valor->name."</a>
+                         </li>";
+                  }
+                ?>
             </ul>
         </div>
     </div>

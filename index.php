@@ -18,39 +18,12 @@
     $request = $_SERVER["REQUEST_URI"];
     //Quitamos las variables que puedan llegar por url
     $request_final = explode("?", $request);
-
+    
     /**Validar si la pagina tiene paginacion y si exista esa apgian de paginacion*/
     if(str_contains($request_final[0], 'pagina')){
-        
        $request_final_validation = explode('/pagina/',$request_final[0]);
-        if($rutas[$request_final_validation[0]][2] == 'home'){
-            $data = json_decode(file_get_contents('assets/json/home.json'), false);
-        }else{
-
-        }
-
-        $paginationValidation = getPagination(get_object_vars($data));
-        $totPages = (int)($paginationValidation->total / $paginationValidation->paginasMostrar);  
-        /**Si es diferenye de cero quiere decir que se debe de agregar una pagina extra*/
-        if(($paginationValidation->total % $paginationValidation->paginasMostrar) != 0) $totPages++;
-
-        $prefixValidation = $paginationValidation->mask;
-        $valuesValidation = explode("/", $prefixValidation);
-        
-        foreach ($valuesValidation as $key => $valor){
-            if($valor == '#'){
-              $posicionValorValidation = $key;
-            }
-        }
-
-        $pageValidation = (int)explode("/",$request_final[0])[$posicionValorValidation];
-
-        if($totPages < $pageValidation){
-           include __DIR__. '/pages/' .'sp_no_found.php';
-           return;
-        }else{
-            $request_final = $request_final_validation;
-        }
+       $request_final = $request_final_validation;
+       $isPagination = true;
     }
 
     /**Obtenemos el objeto pagination para ver su configuración */
@@ -67,6 +40,7 @@
     }
 
     if (isset($_GET["b"])){
+        $parametro = $_GET["b"]; 
         include __DIR__.'/pages/sp_buscador.php';
         return;
     }
