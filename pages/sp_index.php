@@ -22,6 +22,10 @@
                             FROM Srfl_Imagenes 
                             WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
                             AND Imgn_IDResolucion = 1 AND Imgn_Estatus = 1) imagen,
+                            (SELECT Imgn_Url 
+                            FROM Srfl_Imagenes 
+                            WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
+                            AND Imgn_IDResolucion = 2 AND Imgn_Estatus = 1) imagen300,
                             IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia
                      FROM Srfl_Noticias 
                      INNER JOIN Srfl_NtcsCtgr ON NtCt_IDNoticia = Ntcs_IDNoticia AND NtCt_Estatus = 1 

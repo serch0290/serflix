@@ -1,4 +1,4 @@
-Buscador que busque en noticias.
+Buscador que busque en noticias. --Listo
 Hacer dinamico el paginador, ahorita lo deje estatico --Listo
 ver como puedo dejar los texto estaticos para diferemtesa idiomas
 me laflta hacer responsivo las noticias que hice del estilo primero --Listo
@@ -37,7 +37,7 @@ En todos los php agregue el request, pero ya lo tengo desde el index, irlo quita
 Hacer tabla de imagenes y relacionarla con la de noticias, resoluciones de imagenes que va a tener la nota
 
 Dejar alturas fijas en noticias de portada. --Listo
-Hacer lo de imagenes de diferentes resoluciones+
+Hacer lo de imagenes de diferentes resoluciones --Listo
 ver como hacer lo de paginados pero ahora si con datos mas reales --Listo
 las url de las noticias, ver como las voy a dejar en los links --Listo
 el acerca de nosotros, tambien como va a ser, seguramente con un json --Listo
@@ -51,7 +51,7 @@ los metadatos que estoy agregando en el index, agregarlos en todas las paginas
 Ve que metas poner en buscador
 falta poner el componente de cookies en todas las paginas
 en consultas si no tiene datos poner sin resultados o alguna cosa asi.
-Poner bien el icono del buscador y imagen que venga de un json tambien.
+Poner bien el icono del buscador y imagen que venga de un json tambien --Listo solo falta que el onclick funcione bien en los 2 buscadores
 
 
 
@@ -59,6 +59,11 @@ https://mascotasadorables.top/wp-content/uploads/2023/08/52-1024x538.jpg.webp 10
 https://mascotasadorables.top/wp-content/uploads/2023/08/52-300x158.jpg.webp 300w, 
 https://mascotasadorables.top/wp-content/uploads/2023/08/52-768x403.jpg.webp 768w, 
 https://mascotasadorables.top/wp-content/uploads/2023/08/52.jpg.webp 1200w   -1250
+
+https://mascotasadorables.top/wp-content/uploads/2023/08/8-1024x538.jpg.webp 1024w, 
+https://mascotasadorables.top/wp-content/uploads/2023/08/8-300x158.jpg.webp 300w, 
+https://mascotasadorables.top/wp-content/uploads/2023/08/8-768x403.jpg.webp 768w, 
+https://mascotasadorables.top/wp-content/uploads/2023/08/8.jpg.webp 1200w
 
 
 1250px
@@ -69,3 +74,5 @@ https://mascotasadorables.top/wp-content/uploads/2023/08/52.jpg.webp 1200w   -12
 
 
 (max-width: 1024px) 100vw, 1024px
+
+

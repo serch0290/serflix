@@ -9,13 +9,15 @@
        <div>
          <!--Aqui va el logo-->
             <a href="/serflix">
-              <img src="/serflix/assets/images/logo.png" class="px-8" />
+              <?php
+                 echo "<img src=\"".$configuracion->logo."\" class=\"px-8\" />";
+              ?>
             </a>
        </div>
-       <div>
+       <div class="input-search">
          <!--Aqui va el buscador-->
-         <input type="text" placeholder="Buscar" class="input-search" />
-         <i class="fa-solid fa-magnifying-glass" style="cursor: pointer; color: white;" onclick="buscador()"></i>
+         <input type="text" placeholder="Buscar"  />
+         <i class="fa-solid fa-magnifying-glass" style="cursor: pointer; color: gray;" onclick="buscador()"></i>
        </div>
        <div class="nav-active">
          <div class="show-mobile-menu white-fg">

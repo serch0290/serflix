@@ -5,7 +5,9 @@
             echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiasPortada[0]["url"]."\">
                     <div class=\"container-noticia\">
                         <div class=\"container-imagen content-image-principal\">
-                            <div style=\"background-image: url('".$noticiasPortada[0]["imagen"]."');\" class=\"image image-principal\"></div>
+                            <img srcset=\"".$noticiasPortada[0]["imagen300"]." 300w, ".$noticiasPortada[0]["imagen"]." 1024w\" 
+                                 sizes=\"(max-width: 600px) 300px,
+                                         1024px\" class=\"image-src image-principal\" />
                             <div class=\"content-item-category\">
                                 <strong>".$noticiasPortada[0]["categoria"]."</strong>
                             </div>
@@ -43,7 +45,7 @@
                             <a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$noticiasPortada[$i]["url"]."\">
                                 <div class=\"container-noticia\">
                                     <div class=\"container-imagen image-thumb-image\">
-                                        <div style=\"background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');\" class=\"image article-image-thumb\"></div>
+                                        <div style=\"background-image: url('".$noticiasPortada[$i]["imagen"]."');\" class=\"image article-image-thumb\"></div>
                                         <div class=\"content-item-category\">
                                             <strong>".$noticiasPortada[$i]["categoria"]."</strong>
                                         </div>

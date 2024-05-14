@@ -12,7 +12,9 @@
     <div class="content-footer">
         <div class="logo-footer">
             <a hfer="/">
-                <img src="/serflix/assets/images/logo.png" />
+              <?php
+                 echo "<img src=\"".$configuracion->logo."\"/>";
+              ?>
             </a>
         </div>
         <div class="widget-area">

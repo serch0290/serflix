@@ -253,6 +253,16 @@ ul {
     transition: transform .2s;
 }
 
+.image-src{
+    position: relative;
+    overflow: hidden;
+    transition: transform .2s;
+    object-fit: cover;
+    object-position: top center;
+    max-width: 100%;
+    width: 100%;
+}
+
 .container-noticia{
     display: flex;
     flex-direction: column;
@@ -330,9 +340,23 @@ ul {
     border: 1px solid #ffffff26 !important;
     height: 40px;
     margin: auto;
-    padding-left: 15px;
+    padding-left: 5px;
     margin-top: 40px;
+    background-color: white;
 }
+
+.input-search-below input{
+    width: 90%;
+    border: none;
+    height: 100%;
+}
+
+.input-search-below input:focus-visible {
+    outline-width: 0;
+    outline: 0;
+  }
+
+
 
 /*Estilo para los titulos de las secciones*/
 .title-section{
