@@ -52,7 +52,8 @@ Ve que metas poner en buscador
 falta poner el componente de cookies en todas las paginas
 en consultas si no tiene datos poner sin resultados o alguna cosa asi.
 Poner bien el icono del buscador y imagen que venga de un json tambien --Listo solo falta que el onclick funcione bien en los 2 buscadores
-
+checar todo el proyecto al final y tratar que no queden styles y dejar todo el clases
+de las imagenes ya lo hice, ya solo cuando en real lo este haciendo, dejas de cada noticia la resolucion que yo dedida
 
 
 https://mascotasadorables.top/wp-content/uploads/2023/08/52-1024x538.jpg.webp 1024w, 

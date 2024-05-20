@@ -1,57 +1,22 @@
 <div fxLayout="column">
     <p class="title-section">
       <strong>
-         Lo más reciente
+         <?php echo $noticiasLateral->title; ?>
       </strong>
     </p>
-    <article class="article-reciente">
-      <a href="#detalleUltimasNoticias">
-        <div class="container-imagen thumbnail-ultimas-noticias">
-                <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-ultimas-noticias"></div>
-         </div>
-         <div class="thumbnail-content-ultimas-noticias">
-            <p><strong>La astronomia: una puerte estelar para apreciar el universo</strong></p>
-         </div>
-      </a>
-    </article>
-    <article class="article-reciente">
-      <a href="#detalleUltimasNoticias">
-        <div class="container-imagen thumbnail-ultimas-noticias">
-                <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-ultimas-noticias"></div>
-         </div>
-         <div class="thumbnail-content-ultimas-noticias">
-            <p><strong>La astronomia: una puerte estelar para apreciar el universo</strong></p>
-         </div>
-      </a>
-    </article>
-    <article class="article-reciente">
-      <a href="#detalleUltimasNoticias">
-        <div class="container-imagen thumbnail-ultimas-noticias">
-                <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-ultimas-noticias"></div>
-         </div>
-         <div class="thumbnail-content-ultimas-noticias">
-            <p><strong>La astronomia: una puerte estelar para apreciar el universo</strong></p>
-         </div>
-      </a>
-    </article>
-    <article class="article-reciente">
-      <a href="#detalleUltimasNoticias">
-        <div class="container-imagen thumbnail-ultimas-noticias">
-                <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-ultimas-noticias"></div>
-         </div>
-         <div class="thumbnail-content-ultimas-noticias">
-            <p><strong>La astronomia: una puerte estelar para apreciar el universo</strong></p>
-         </div>
-      </a>
-    </article>
-    <article class="article-reciente">
-      <a href="#detalleUltimasNoticias">
-        <div class="container-imagen thumbnail-ultimas-noticias">
-                <div style="background-image: url('https://mascotasadorables.top/wp-content/uploads/2023/08/52-400x267.jpg.webp');" class="image thumbnail-image-ultimas-noticias"></div>
-         </div>
-         <div class="thumbnail-content-ultimas-noticias">
-            <p><strong>La astronomia: una puerte estelar para apreciar el universo</strong></p>
-         </div>
-      </a>
-    </article>
+
+    <?php 
+       foreach ($noticiasRecientes as $noticia) {
+          echo "<article class=\"article-reciente\">
+                    <a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticia["url"]."\">
+                      <div class=\"container-imagen thumbnail-ultimas-noticias\">
+                              <div style=\"background-image: url('".$noticia["imagen"]."');\" class=\"image thumbnail-image-ultimas-noticias\"></div>
+                        </div>
+                        <div class=\"thumbnail-content-ultimas-noticias\">
+                          <p><strong>".$noticia["titulo"]."</strong></p>
+                        </div>
+                    </a>
+                </article>";
+       }
+    ?>
 </div>

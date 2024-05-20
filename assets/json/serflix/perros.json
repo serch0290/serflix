@@ -1,4 +1,12 @@
 {
     "title": "Categoria Perros",
+    "h1": "Perros h1",
+    "idCategoria": 1,
+    "noticiasLateral":{
+        "title": "Lo más reciente"
+    },
+    "intereses": {
+        "title": "Tambien te puede interesar"
+    },
     "breadcrumb": [{"name": "Inicio", "link": "/serflix"},{"name": "Perros"}]
 }
