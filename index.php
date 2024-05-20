@@ -2,7 +2,7 @@
     ini_set('display_errors', '1');
     ini_set('display_startup_errors', '1');
     error_reporting(E_ALL);
-    
+
     //Rutas definidas del proyecto
     $rutas = [
         '/serflix/' => ['Página principal', 'sp_index.php', 'home'],
@@ -10,7 +10,7 @@
         '/serflix/principal' => ['Página principal', 'sp_index_principal.php', ''],
         '/serflix/perros/principal' => ['Mantenimiento', 'sp_category_principal.php'],
         '/serflix/perros' => ['Mantenimiento', 'sp_category.php'],
-        '/serflix/perros/downsizing-formacion-de-galaxias-y-evolucion-estelar-cosmica' => ['Nota', 'sp_noticia.php', ''],
+        '/serflix/downsizing-formacion-de-galaxias-y-evolucion-estelar-cosmica' => ['Nota', 'sp_noticia.php', ''],
         '/serflix/privacidad' => ['Privacidad', 'sp_privacidad.php'],
         '/serflix/sobre-mi' => ['Acerca de mi', 'sp_about_me.php'],
         '/serflix/contacto' => ['Contacto', 'sp_contacto.php']
