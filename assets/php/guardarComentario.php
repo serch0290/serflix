@@ -11,7 +11,7 @@
        die("Connection failed: " . mysqli_connect_error());
    }
 
-   $sql = "INSERT INTO Srfl_Comentarios(Cmnt_Nombre, Cmnt_Comentario, Cmnt_Email, Cmnt_EsttCmnt, Cmnt_FchaCrcn) VALUES ('".$_POST["name"]."','".$_POST["comment"]."', '".$_POST["email"]."', 1, CURDATE())";
+   $sql = "INSERT INTO Srfl_Comentarios(Cmnt_IDNoticia, Cmnt_Nombre, Cmnt_Comentario, Cmnt_Email, Cmnt_EsttCmnt, Cmnt_FchaCrcn) VALUES (".$_POST["id"].", '".$_POST["name"]."','".$_POST["comment"]."', '".$_POST["email"]."', 1, CURDATE())";
     
    if ($conn->query($sql) === TRUE) {
        echo "Comentario guardado correctamente.";

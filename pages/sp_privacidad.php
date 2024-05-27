@@ -52,7 +52,7 @@
           </div>
         </article>
       </main>
-      <?php include_once 'componentes/footer.php';?>
+      <?php include_once 'componentes/cookies.php';?>
       <?php include_once 'componentes/footer.php';?>
   </body>
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>

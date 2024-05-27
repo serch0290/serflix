@@ -61,6 +61,7 @@
             </div>
          </article>
       </main>
+      <?php include_once 'componentes/cookies.php';?>
       <?php include_once 'componentes/footer.php';?>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>

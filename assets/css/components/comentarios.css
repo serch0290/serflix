@@ -30,10 +30,10 @@
 }
 
 .date-comment{
-    color: red !important;
+    color: #45523e !important;
     text-align: right !important;
     margin: 0;
-    font-size: 15px !important;
+    font-size: 12px !important;
 }
 
 .comment-list{
@@ -59,8 +59,9 @@
     padding: 10px;
     width: 65%;
     background-color: white;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    /*box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);*/
     border-radius: 5px;
+    border: 1px dashed gray;
 }
 
 .author-box-comment p{

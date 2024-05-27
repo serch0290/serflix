@@ -2,13 +2,180 @@
     "breadcrumb": [{"name": "Inicio", "link": "/serflix"},{"name": "Perros", "link": "/serflix/perros"},{"name": "Downsizing: formación de galaxias y evolución estelar cósmica"}],
     "h1": "Sweet Potato Dosage: How Much To Feed A Dog With Diarrhea?",
     "comentarios": true,
+    "idNoticia": 16,
+    "IDNoticiasEnlazado": "8, 12, 3, 5",
+    "IDNoticiasRelacionadas": "5, 3, 9, 11, 4, 6",
     "author": {
         "nombre": "Sergio Cruz Flores",
-        "foto": "https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png"
+        "foto": "https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png",
+        "descripcion": "Apasionado de la era digital y defensor de la seguridad en línea. Leonardo creo este sitio web con el. Cuando no está investigando sobre los últimos gestores de contraseñas o escribiendo sobre cómo proteger tus datos, probablemente lo encontrarás disfrutando de una buena película o explorando nuevos destinos. Cree firmemente que un mundo digital seguro es posible con la educación y las herramientas adecuadas."
     },
-    "detalle": {
-        "img": {
-            "image1": ""
+    "noticiasLateral":{
+        "title": "Lo más reciente"
+    },
+    "detalle": [
+        {
+          "type": "img",
+          "img": "https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp"
+        },
+        {
+           "type": "html",
+           "html": "<p><strong>La meteorología es una ciencia que estudia los fenómenos atmosféricos y su evolución en el tiempo.</strong> Conocer el clima y sus cambios es fundamental para tomar decisiones en diversos ámbitos, como la agricultura, la navegación o la planificación de actividades al aire libre. En este contexto, la tecnología puede ser una gran aliada para recopilar y visualizar los datos meteorológicos de manera práctica y accesible.</p><p>Presentaremos un proyecto de estación meteorológica utilizando una pantalla TFT y Arduino. Explicaremos cómo construir y programar esta estación, así como también cómo obtener diferentes datos meteorológicos, como la temperatura, la humedad y la presión atmosférica. Además, aprenderemos cómo mostrar estos datos de manera gráfica en la pantalla TFT, para tener una visualización clara y atractiva de la información recopilada. ¡Comencemos con este emocionante proyecto!</p>"
+        },
+        {
+            "type": "table-content",
+            "list": [
+                {
+                    "hash": "#como-construir-una-estacion",
+                    "name": "Homemade Dog Food Recipe: Save Money and Keep Your Dog Healthy | VET APPROVED"
+                },
+                {
+                    "hash": "#prueba-de-otro-hash",
+                    "name": "For frequently asked questions, check out our FAQ section",
+                    "sublist": [
+                        {
+                            "hash": "#prueba-submenu",
+                            "name": "What is the appropriate dosage of sweet potato for treating diarrhea in dogs?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "h2",
+            "data": "Descubriendo los secretos del universo a través del estudio de las galaxias en miniatura"
+        },
+        {
+            "type": "html",
+            "html": "<p>Los cúmulos y supercúmulos son estructuras de gran tamaño en el universo, compuestas por numerosas galaxias que interactúan entre sí. Estas agrupaciones juegan un papel fundamental en la formación y evolución de las galaxias que las componen.</p><p>En primer lugar, los cúmulos y supercúmulos proporcionan un entorno propicio para la formación de nuevas galaxias. A medida que las galaxias se acercan y se agrupan en estas estructuras, las interacciones gravitatorias entre ellas pueden desencadenar el colapso de nubes de gas y polvo, dando lugar a la formación de nuevas estrellas y, en última instancia, de nuevas galaxias. Este proceso de formación estelar en cúmulos y supercúmulos es crucial para el enriquecimiento del universo en elementos más pesados que el hidrógeno y el helio, permitiendo la aparición de elementos necesarios para la formación de planetas y vida.</p><p>Además de la formación de nuevas galaxias, los cúmulos y supercúmulos también desempeñan un papel importante en la evolución de las galaxias existentes. Dentro de estas agrupaciones, las galaxias interactúan entre sí mediante interacciones gravitatorias y colisiones, lo que puede desencadenar la fusión de galaxias. Estas fusiones galácticas dan lugar a la formación de galaxias elípticas y galaxias lenticulares, que presentan características diferentes a las galaxias espirales o irregulares. Además, las interacciones entre galaxias en los cúmulos y supercúmulos también pueden influir en la formación y evolución de los agujeros negros supermasivos que se encuentran en el centro de muchas galaxias.</p>"
+        },
+        {
+            "type": "h2",
+            "data": "Cómo construir una estación meteorológica casera con Arduino",
+            "hash": "como-construir-una-estacion"
+        },
+        {
+            "type": "html",
+            "html": "<p>En este artículo te mostraremos cómo construir tu propia estación meteorológica casera utilizando Arduino y una pantalla TFT. Con este proyecto, podrás obtener información en tiempo real sobre la temperatura, humedad y presión atmosférica de tu entorno.</p>"
+        },
+        {
+            "type": "h3",
+            "data": "¿Qué necesitarás?"
+        },
+        {
+            "type": "list",
+            "list": [
+                {"name": "Arduino UNO"},
+                {"name": "Sensor de temperatura y humedad DHT11"},
+                {"name": "Sensor de presión atmosférica BMP180"},
+                {"name": "Pantalla TFT de 2.4 pulgadas"},
+                {"name": "Protoboard"},
+                {"name": "Cables de conexión"}
+            ]
+        },
+        {
+            "type": "h3",
+            "data": "Pasos"
+        },
+        {
+            "type": "list-number",
+            "list": [
+                {"name": "Paso 1: Lo que sea es importante"},
+                {"name": "Paso 1: Lo que sea es importante"},
+                {"name": "Paso 1: Lo que sea es importante"},
+                {"name": "Paso 1: Lo que sea es importante"},
+                {"name": "Paso 1: Lo que sea es importante"},
+                {"name": "Paso 1: Lo que sea es importante"}
+            ]
+        },
+        {
+            "type": "h2",
+            "data": "Simulación de la formación y evolución de un cúmulo de galaxias con el supercomputador “teide-hpc”"
+        },
+        {
+            "type": "video",
+            "video": "https://www.youtube.com/embed/InJOTkEzQtg?feature=oembed"
+        },
+        {
+            "type": "h2",
+            "data": "Preguntas frecuentes",
+            "class": "pb-20"
+        },
+        {
+            "type": "h3",
+            "data": "1. ¿Cómo se forman las galaxias en cúmulos y supercúmulos?"
+        },
+        {
+            "type": "html",
+            "html": "<p>Las galaxias en cúmulos y supercúmulos se forman a partir de la acumulación de gas y polvo en regiones de alta densidad. Estas regiones colapsan bajo la influencia de la gravedad, formando estrellas y posteriormente galaxias.</p>"
+        },
+        {
+            "type": "h3",
+            "data": "1. ¿Cómo se forman las galaxias en cúmulos y supercúmulos?"
+        },
+        {
+            "type": "html",
+            "html": "<p>Las galaxias en cúmulos y supercúmulos se forman a partir de la acumulación de gas y polvo en regiones de alta densidad. Estas regiones colapsan bajo la influencia de la gravedad, formando estrellas y posteriormente galaxias.</p>"
+        },
+        {
+            "type": "h3",
+            "data": "1. ¿Cómo se forman las galaxias en cúmulos y supercúmulos?"
+        },
+        {
+            "type": "html",
+            "html": "<p>Las galaxias en cúmulos y supercúmulos se forman a partir de la acumulación de gas y polvo en regiones de alta densidad. Estas regiones colapsan bajo la influencia de la gravedad, formando estrellas y posteriormente galaxias.</p>"
         }
-    }
+    ],
+    "redesSociales": [
+        {
+          "link": "https://www.facebook.com/sharer/sharer.php?u=",
+          "class": "facebook",
+          "icon": "fa-brands fa-facebook-f"
+        },
+        {
+           "link": "fb-messenger://share/?link=",
+           "class": "facebook-messenger",
+           "icon": "fa-brands fa-facebook-messenger"
+        },
+        {
+           "link": "https://x.com/intent/tweet?text=Esto es un ejemplo de mi web&url=",
+           "class": "twitter",
+           "icon": "fa-brands fa-x-twitter"
+        },
+        {
+           "link": "https://pinterest.com/pin/create/button/?url=",
+           "class": "pinterest",
+           "icon": "fa-brands fa-pinterest-p"
+        },
+        {
+           "link": "https://wa.me/?text=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos%20-%20",
+           "class": "whatsapp",
+           "icon": "fa-brands fa-whatsapp"
+        },
+        {
+           "link": "https://tumblr.com/widgets/share/tool?canonicalUrl=",
+           "class": "tumblr",
+           "icon": "fa-brands fa-tumblr"
+        },
+        {
+           "link": "https://www.linkedin.com/shareArticle?mini=true&url=",
+           "class": "linkedin",
+           "icon": "fa-brands fa-linkedin"
+        },
+        {
+           "link": "https://t.me/share/url?text=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos&url=",
+           "class": "telegram",
+           "icon": "fa-brands fa-telegram"
+        },
+        {
+           "link": "mailto:?subject=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos&body=",
+           "class": "email",
+           "icon": "fa-regular fa-envelope"
+        },
+        {
+           "link": "http://reddit.com/submit?title=Formación de anillos planetarios: Análisis de Saturno y otros ejemplos&url=",
+           "class": "reedit",
+           "icon": "fa-brands fa-reddit-alien"
+        }
+    ]
 }

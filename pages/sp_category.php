@@ -151,3 +151,6 @@
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
   <script type="text/javascript" src="/serflix/assets/js/menu.js"></script>
 </html>
+<?php 
+    $conn->close();
+?>

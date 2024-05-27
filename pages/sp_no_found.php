@@ -21,9 +21,13 @@
         <?php include_once 'componentes/noticias-interesantes.php'; ?>
     </div>
   </div>
+  <?php include_once 'componentes/cookies.php';?>
   <?php include_once 'componentes/footer.php';?>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
   <script type="text/javascript" src="/serflix/assets/js/menu.js"></script>
 </html>
+<?php 
+    $conn->close();
+?>
