@@ -59,6 +59,8 @@ quitar styles en todas las paginas, solo dejar class
 tengo que probar las redes sociales pero en real ya cuando suba la pagina al sitio
 en el detalle de la noticia si me falta definitivo ver como dejar la imagen resposiva
 quitar el logo de la fede en foto de comentarios
+ver como poner los title en la sección de compartir las redes sociales me falto, y ver los de los metas de de redes sociales todo los metas para qur tome el title, descripcion etc.
+
 
 
 https://mascotasadorables.top/wp-content/uploads/2023/08/52-1024x538.jpg.webp 1024w, 

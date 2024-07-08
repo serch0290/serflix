@@ -48,7 +48,7 @@
 
     $totalNoticias = count($rowNoticiasCompleto);
 
-    if($home->noticias_style1->pagination) $home->noticias_style1->pagination->total = $totalNoticias;
+    if(!empty($home->noticias_style1) && $home->noticias_style1->pagination) $home->noticias_style1->pagination->total = $totalNoticias;
     
     /**Se guarda h1 en variable */
     $h1 = $home->h1;

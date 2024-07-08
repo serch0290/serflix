@@ -80,8 +80,8 @@
     return (int)$value['tipo'] == 3;
   }));
 
-  $noticiasLateral = $noticia->noticiasLateral;
-  $redesSociales = $noticia->redesSociales;
+  if(!empty($noticia->noticiasLateral)) $noticiasLateral = $noticia->noticiasLateral;
+  if(!empty($noticia->redesSociales)) $redesSociales = $noticia->redesSociales;
 ?>
 <!doctype html>
 <html lang="es"> 

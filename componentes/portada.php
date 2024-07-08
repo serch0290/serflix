@@ -2,24 +2,28 @@
     <div class="col-lx-6 col-12 mb-20-lt-lx">
         <article id="portada" class="article-principal">
           <?php 
-            echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiasPortada[0]["url"]."\">
-                    <div class=\"container-noticia\">
-                        <div class=\"container-imagen content-image-principal\">
-                            <img srcset=\"".$noticiasPortada[0]["imagen300"]." 300w, ".$noticiasPortada[0]["imagen"]." 1024w\" 
-                                 sizes=\"(max-width: 600px) 300px,
-                                         1024px\" class=\"image-src image-principal\" />
-                            <div class=\"content-item-category\">
-                                <strong>".$noticiasPortada[0]["categoria"]."</strong>
+          if(count($noticiasPortada) > 0){
+             echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiasPortada[0]["url"]."\">
+                        <div class=\"container-noticia\">
+                            <div class=\"container-imagen content-image-principal\">
+                                <img srcset=\"".$noticiasPortada[0]["imagen300"]." 300w, ".$noticiasPortada[0]["imagen"]." 1024w\" 
+                                    sizes=\"(max-width: 600px) 300px,
+                                            1024px\" class=\"image-src image-principal\" />
+                                <div class=\"content-item-category\">
+                                    <strong>".$noticiasPortada[0]["categoria"]."</strong>
+                                </div>
+                            </div>
+                            <div class=\"content-principal align-center-items\">
+                                <h2>".$noticiasPortada[0]["titulo"]."</h2>
+                                <h3>".$noticiasPortada[0]["descripcion"]."</h3>
+                                <h4>".$noticiasPortada[0]["fecha"]."</h4>
                             </div>
                         </div>
-                        <div class=\"content-principal align-center-items\">
-                            <h2>".$noticiasPortada[0]["titulo"]."</h2>
-                            <h3>".$noticiasPortada[0]["descripcion"]."</h3>
-                            <h4>".$noticiasPortada[0]["fecha"]."</h4>
-                        </div>
-                    </div>
-               </a>
-            ";
+                </a>
+                ";
+          }else{
+             echo "Sin información";
+          }
           ?>
         </article>
     </div>
@@ -27,6 +31,9 @@
        <div class="row wrap">
             <?php 
                for($i = 1; $i < 5; $i++){
+                if(count($noticiasPortada) <= 1){
+                    continue;
+                 }
                 /*if(strlen($noticiasPortada[$i]["titulo"]) > 26){
                    $titulo = substr($noticiasPortada[$i]["titulo"], 0, 26).' ...';
                 }else{

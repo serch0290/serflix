@@ -96,6 +96,7 @@
     <!--Redes socuales-->
     <div class="social-media wrap">
         <?php 
+        if(!empty($redesSociales)){
           foreach($redesSociales as $red){
               echo "<a href=\"".$red->link.$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']."\" 
                        class=\"".$red->class."\" 
@@ -104,19 +105,22 @@
                        <i class=\"".$red->icon."\"></i>
                     </a>";
           }
+         }
         ?>
     </div>
 
     <?php 
-       echo "<div class=\"author-box\" id=\"author-box\">
-                <div class=\"author-box-photo\">
-                    <img src=\"".$noticia->author->foto."\" />
-                </div>  
-                <div class=\"author-box-biographie\">
-                    <strong>".$noticia->author->nombre."</strong>
-                    <p>".$noticia->author->descripcion."</p>
-                </div>  
-            </div>";
+      if(!empty($noticia->author)){
+        echo "<div class=\"author-box\" id=\"author-box\">
+                  <div class=\"author-box-photo\">
+                      <img src=\"".$noticia->author->foto."\" />
+                  </div>  
+                  <div class=\"author-box-biographie\">
+                      <strong>".$noticia->author->nombre."</strong>
+                      <p>".$noticia->author->descripcion."</p>
+                  </div>  
+              </div>";
+      }
     ?>
     <div class="noticias-leidas">
        <p class="title-section">Lo que mas estan leyendo</p>
