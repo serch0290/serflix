@@ -2,7 +2,7 @@
    $menu = json_decode(file_get_contents('assets/json/menu.json'), false);
 ?>
 
-<header class="site-header green-bg">
+<header class="site-header">
    <div class="container h-60">
    <!--<i class="fa-solid fa-align-justify"></i>-->
       <div class="row justify-content align-center-items-lg align-center-lt-lg h-100-p">
@@ -51,7 +51,7 @@
           ?>
         </ul>
           <!--Menú responsivo-->
-          <div class="slide-menu green-bg">
+          <div class="slide-menu">
             <div class="slide-menu-header">
                 <div class="col-10 flex-center">
                     <strong class="white-fg font-size-20">Menú</strong>

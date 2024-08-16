@@ -1,4 +1,5 @@
 {
     "title": "Categoria Perros",
+    "idCategoria": 1,
     "breadcrumb": [{"name": "Inicio", "link": "/serflix"},{"name": "Perros"}]
 }

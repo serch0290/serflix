@@ -1,13 +1,19 @@
 <?php
   //Obtenemos toda la configuración de la noticia
-  $noticia_recomended = json_decode(file_get_contents('assets/json/serflix/noticias-recomended.json'), false);
+  $filePathRecomended = 'assets/json/serflix/noticias-recomended.json';
+  $noticia_recomended = null;
+  if (file_exists($filePathRecomended)) {
+      $noticia_recomended = json_decode(file_get_contents($filePathRecomended), false);
+  }
 ?>
 <div class="column" id="recommended-news">
+    <?php if(!empty($noticia_recomended)){ ?>
     <p class="title-section">
          <strong><?php echo $noticia_recomended->title; ?></strong>
     </p>
     <?php 
-    for($j=0; $j < 3; $j++){
+    $i = (count($rowNoticias) <= 3) ? count($rowNoticias) : 3;
+    for($j=0; $j < $i; $j++){
         echo "<div class=\"post-thumbnail\">
                 <a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$rowNoticias[$j]["url"]."\">
                     <div class=\"container-imagen thumbnail-image\">
@@ -27,6 +33,6 @@
                 </a>
             </div>";
     }
-    
+   }
     ?>
 </div>
