@@ -57,7 +57,7 @@ footer, .list-detail-pasos > li::before, .title-section::before, .site-header{
 }
 
 .article-content .title-article-content, .thumbnail-text, .content-principal h2, 
-.list-detail-note li::marker, .thumbnail-content-leido p, .thumbnail-content-ultimas-noticias p, .check-aviso-privacidad{
+.list-detail-note li::marker, .thumbnail-content-leido p, .thumbnail-content-ultimas-noticias p, .check-aviso-privacidad, .date-comment{
     color: #45523e; /*Color de la letra de los titulos  de las noticias en el homepage*/
 }
 

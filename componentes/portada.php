@@ -19,8 +19,7 @@
                                 <h4>".$noticiasPortada[0]["fecha"]."</h4>
                             </div>
                         </div>
-                </a>
-                ";
+                </a>";
             }else{
                 echo "<span>Sin información portada</span>";
             }
@@ -66,8 +65,7 @@
                                 </div>
                             </a>
                         </article>
-                    </div>
-                ";
+                    </div>";
                }
             ?>
        </div>

@@ -1,9 +1,92 @@
 <?php
+  require_once('assets/php/lib/Conexion.php');
   $request = $_SERVER["REQUEST_URI"];
   //Quitamos las variables que puedan llegar por url
   $request_final = explode("?", $request);
   //Obtenemos toda la configuración de la noticia
   $category = json_decode(file_get_contents('assets/json' . $request_final[0] . '.json'), false);
+
+  $conexion = new Conexion();
+  $conn = $conexion->connect();
+  $conn->query("SET lc_time_names = 'es_ES'");
+  $sql_categoria = "(SELECT Ntcs_IDNoticia idNoticia, 
+                        Ntcs_Titulo titulo, 
+                        Ntcs_Descripcion descripcion, 
+                        Ntcs_Url url, 
+                        DATE_FORMAT(Ntcs_FchaCrcn, \"%d de %b del %Y\") fecha, 
+                        NtCt_IDCategoria idCategoria,
+                        Ctgr_Nombre categoria,
+                        (SELECT Imgn_Url 
+                           FROM Srfl_Imagenes 
+                           WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
+                           AND Imgn_IDResolucion = 1 AND Imgn_Estatus = 1) imagen,
+                           IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia,
+                        IFNULL((SELECT COUNT(VsNt_IDNoticia) 
+                                FROM Srfl_VstsNtca 
+                                WHERE VsNt_IDNoticia = Ntcs_IDNoticia AND VsNt_Estatus = 1), 0) vistas,
+                        1 tipo
+                        FROM Srfl_Noticias 
+                        INNER JOIN Srfl_NtcsCtgr ON NtCt_IDNoticia = Ntcs_IDNoticia AND NtCt_Estatus = 1 AND NtCt_IDCategoria = ".$category->idCategoria."
+                        INNER JOIN Srfl_Categoria ON Ctgr_IDCategoria = NtCt_IDCategoria AND Ctgr_Estatus = 1 
+                        WHERE Ntcs_Estatus = 1
+                        AND Ntcs_EsttPblc = 2 ORDER BY vistas DESC, Ntcs_IDNoticia DESC) UNION
+                        (SELECT Ntcs_IDNoticia idNoticia, 
+                                Ntcs_Titulo titulo, 
+                                Ntcs_Descripcion descripcion, 
+                                Ntcs_Url url, 
+                                DATE_FORMAT(Ntcs_FchaCrcn, \"%d de %b del %Y\") fecha, 
+                                NtCt_IDCategoria idCategoria, 
+                                Ctgr_Nombre categoria,
+                                (SELECT Imgn_Url 
+                                 FROM Srfl_Imagenes 
+                                 WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
+                                 AND Imgn_IDResolucion = 1 AND Imgn_Estatus = 1) imagen,
+                                 IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia,
+                                 0,
+                                 2 tipo
+                        FROM Srfl_Noticias 
+                        INNER JOIN Srfl_NtcsCtgr ON NtCt_IDNoticia = Ntcs_IDNoticia AND NtCt_Estatus = 1
+                        INNER JOIN Srfl_Categoria ON Ctgr_IDCategoria = NtCt_IDCategoria AND Ctgr_Estatus = 1 
+                              AND NOT Ctgr_IDCategoria = ".$category->idCategoria."
+                        WHERE Ntcs_Estatus = 1 AND Ntcs_EsttPblc = 2
+                        ORDER BY RAND() LIMIT 0,5) ORDER BY tipo ASC, vistas DESC, idNoticia DESC";
+
+   $resultNoticiasCategoria = $conn->query($sql_categoria);    
+   $rowNoticias = mysqli_fetch_all($resultNoticiasCategoria, MYSQLI_ASSOC);  
+
+   $idCategoria = $category->idCategoria;
+
+   /**Filtramos por todas las noticias de la categoria */
+   $rowNoticiasCategoria = array_values(array_filter($rowNoticias, function($value) use($idCategoria){
+      return (int)$value['idCategoria'] == $idCategoria;
+   }));
+
+   /**Filtramos por todas las noticias que ban abajo de ultimas noticias*/
+   $rowNoticiasCategoriaInteresantes = array_values(array_filter($rowNoticias, function($value) use($idCategoria){
+      return (int)$value['idCategoria'] != $idCategoria;
+   }));
+
+   $intereses = $category->intereses;
+
+   $rowNoticiasCategoriaTodos = array_merge(array(), $rowNoticiasCategoria);
+
+    /**Se guarda h1 en variable */
+    $h1 = $category->h1;
+
+    array_splice($rowNoticiasCategoria, 3);//Se queda con las primeras tres noticias
+    array_splice($rowNoticiasCategoriaTodos, 0, 3);
+
+    /**Las noticias que quedaron los ordemos de forma descendente */
+    usort($rowNoticiasCategoriaTodos, function($a, $b){
+         if ($a["idNoticia"] == $b["idNoticia"])
+             return (0);
+         return (($a["idNoticia"] > $b["idNoticia"]) ? -1 : 1);
+    });
+    $noticiasRecientes = array_merge(array(), $rowNoticiasCategoriaTodos);
+
+    array_splice($noticiasRecientes, 5);
+    array_splice($rowNoticiasCategoriaTodos, 0, 5);
+    $noticiasLateral = $category->noticiasLateral;
 ?>
 
 <!doctype html>
@@ -43,17 +126,8 @@
          </ul>
          
          <div class="row-xs wrap-xs column align-center-item-xs mt-10">
-            <div class="col-lx-4 col-xs-6 col-12">
                <?php include 'componentes/noticias-group.php'; ?>
-            </div>
-            <div class="col-lx-4 col-xs-6 col-12">
-               <?php include 'componentes/noticias-group.php'; ?>
-            </div>
-            <div class="col-lx-4 col-xs-6 col-12">
-               <?php include 'componentes/noticias-group.php'; ?>
-            </div>
          </div>
-         
          <div class="row-lx column mt-20">
             <div class="col-lx-8">
                <?php include_once 'componentes/noticias-style2.php'; ?>
@@ -77,3 +151,6 @@
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
   <script type="text/javascript" src="/serflix/assets/js/menu.js"></script>
 </html>
+<?php 
+    $conn->close();
+?>

@@ -18,17 +18,17 @@ hacer icono que cuando estes abajo y les des click te lleve hasta arriba hasta u
 seria hacer el icono chiquito que sale en la pestaña de la pagina, ya cuando sea la página real.
 
 
-en la parte de comentarios validar que el correo es correcto- Listo solo fanto probarlo en casa
-En comentarios guardados, poner una foto generica- Listo probar en la casa
-Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo
-cuando en buscador o paginación no se encuetre lo que se esta buscando poner que no se encuentra resultados y poner un listado de noticias.
+en la parte de comentarios validar que el correo es correcto- Listo
+En comentarios guardados, poner una foto generica- Listo
+Caja de comentarios cambiarlos a border punteado y mas cosas, verificar que puede quedar con ese estilo -Listo
+cuando en buscador o paginación no se encuetre lo que se esta buscando poner que no se encuentra resultados y poner un listado de noticias. --Listo
 me falta hacer las cookies - Listo
 Hacer un modal mas bonito para las alertas --Listo
-Si tengo qhe hacer un desmadre si quiero que tenga comentarios o no;
+Si tengo qhe hacer un desmadre si quiero que tenga comentarios o no; --Listo
 Hacer la clase de conexión en php y solo importarla para no duplicar codigo --Listo en contacto solo me falta probarlo
 en consulta de comentarios si sale un error al conexion solo ponerlo como un mensaje genero en vista
 validar el correo --Listo, solo falta probar
-Los comentarios tienen que ser por id de noticia
+Los comentarios tienen que ser por id de noticia --Listo
 En mensaje de comentarioas poner que se va a validar. Listo
 tambien validar el check de aviso de privacidad --listo solo falta probar
 modal tratar de poner el efectito que agregue
@@ -49,9 +49,17 @@ Me falta hacer dinamico con json del menu y footer y que funcione el buscador y 
 pagina no encontrada, hacer sección de noticias a mostrar --Listo
 los metadatos que estoy agregando en el index, agregarlos en todas las paginas
 Ve que metas poner en buscador
-falta poner el componente de cookies en todas las paginas
+falta poner el componente de cookies en todas las paginas --Listo
 en consultas si no tiene datos poner sin resultados o alguna cosa asi.
 Poner bien el icono del buscador y imagen que venga de un json tambien --Listo solo falta que el onclick funcione bien en los 2 buscadores
+checar todo el proyecto al final y tratar que no queden styles y dejar todo el clases
+de las imagenes ya lo hice, ya solo cuando en real lo este haciendo, dejas de cada noticia la resolucion que yo dedida
+
+quitar styles en todas las paginas, solo dejar class
+tengo que probar las redes sociales pero en real ya cuando suba la pagina al sitio
+en el detalle de la noticia si me falta definitivo ver como dejar la imagen resposiva
+quitar el logo de la fede en foto de comentarios
+ver como poner los title en la sección de compartir las redes sociales me falto, y ver los de los metas de de redes sociales todo los metas para qur tome el title, descripcion etc.
 
 
 

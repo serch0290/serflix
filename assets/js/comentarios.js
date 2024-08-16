@@ -3,6 +3,8 @@ function guardarComentario(){
 	let nombre = $('#nombre').val();
 	let email = $('#email').val();
 	let mensaje = $('#mensaje').val();
+	let id = $('#idComentario').val();
+	console.log('idComentario: ', id);
 	var avisoPrivacidad = $("#check-aviso").is(":checked");
 
 	if(!avisoPrivacidad){
@@ -34,12 +36,14 @@ function guardarComentario(){
 	$.ajax({
 		type: 'POST',
 		url: 'http://localhost/serflix/assets/php/guardarComentarios.php',
-		data:{name:nombre,  email: email, comment: mensaje},
+		data:{name:nombre,  email: email, comment: mensaje, id: id},
 		success: function (response) {
 			showModal('Agradecemos tu participación.<br> Tu comentario está siendo validado.');
 			$('#nombre').val('');
 	        $('#email').val('');
 	        $('#mensaje').val('');
+		},error: function(respose){
+			showModal('Ocurrió un error al guardar comentario, favor de intentar más tarde.');
 		}
 	});
 }

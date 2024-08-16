@@ -1,7 +1,4 @@
 <?php 
-    ini_set('display_errors', '1');
-    ini_set('display_startup_errors', '1');
-    error_reporting(E_ALL);
     require_once('assets/php/lib/Conexion.php');
 
     $request = $_SERVER["REQUEST_URI"];
@@ -51,7 +48,10 @@
 
     $totalNoticias = count($rowNoticiasCompleto);
 
-    if($home->noticias_style1->pagination) $home->noticias_style1->pagination->total = $totalNoticias;
+    if(!empty($home->noticias_style1) && $home->noticias_style1->pagination) $home->noticias_style1->pagination->total = $totalNoticias;
+    
+    /**Se guarda h1 en variable */
+    $h1 = $home->h1;
 
     /**Se valida si tiene paginación */
     if(!empty($isPagination)){
@@ -68,6 +68,7 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+      <link rel="icon" href="<?php echo $configuracion->icon;?>"/>
       <title><?php echo $home->title; ?></title>
       <link  rel="stylesheet" href="/serflix/assets/css/dynamic.css">
       <link  rel="stylesheet" href="/serflix/assets/css/general.css">

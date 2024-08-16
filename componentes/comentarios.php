@@ -1,18 +1,11 @@
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-  $dataConecction = json_decode(file_get_contents('assets/json/conexion.json'), false); 
-
-  $conn = mysqli_connect($dataConecction->server, $dataConecction->username, $dataConecction->password, $dataConecction->database);
   $conn->query("SET lc_time_names = 'es_ES'");
   $sql = "SELECT Cmnt_Comentario comentario,
                  Cmnt_Nombre nombre,
                  DATE_FORMAT(Cmnt_FchaCrcn, \"%d de %b del %Y\") fecha
           FROM Srfl_Comentarios
-          WHERE Cmnt_EsttCmnt = 1;";
+          WHERE Cmnt_EsttCmnt = 1 AND Cmnt_IDNoticia = ".$noticia->idNoticia;
   $result = $conn->query($sql);
-  $conn->close();
 ?>
 <div class="comentarios">
     <p class="title-section">
@@ -27,7 +20,7 @@ error_reporting(E_ALL);
                 $class = ($i % 2 == 0) ? 'align-end-items' : '';
                 echo "<div class=\"author-box ".$class."\">
                         <div class=\"author-box-photo-comentario\">
-                          <img src=\"assets/images/sin-foto-png\" />
+                          <img src=\"assets/images/sin-foto.png\" />
                         </div>  
                         <div class=\"author-box-comment\">
                             <strong>".$row["nombre"]."</strong>
@@ -47,6 +40,7 @@ error_reporting(E_ALL);
             </div>
             <div class="w-50-p-xs">
                <input type="text" id="email" placeholder="Correo Electrónico" class="form-control"/>
+               <input  type="hidden" id="idComentario" value="<?php echo $noticia->idNoticia;?>">
             </div>
         </div>
         <div style="margin-top: 20px">
@@ -63,7 +57,7 @@ error_reporting(E_ALL);
             </div>
             
             <span>Información sobre protección de datos</span>
-            <span><strong>Responsable:</strong> Sergio Cruz Flores</span>
+            <span><strong>Responsable:</strong> <?php echo $noticia->author->nombre; ?></span>
             <span><strong>Finalidad:</strong> Moderar los comentarios</span>
             <span><strong>Legitimación:</strong> Por consentimiento del interesado.</span>
             <span><strong>Derechos:</strong> Rectificar y suprimir los comentarios.</span>
