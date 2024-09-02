@@ -7,7 +7,7 @@
     $noticia_style1 = $home->noticias_style1;
 
     /**Si la pagina lleva paginacion se incluye las reglas del negocio */
-    if($noticia_style1->pagination){
+    if(!empty($noticia_style1->pagination)){
         $pagination = $noticia_style1->pagination;
         include_once 'componentes/process-paginacion.php';
     }
@@ -21,6 +21,9 @@
   </p>
   <div class="row wrap">
       <?php 
+        if(count($rowNoticiasCompleto) == 0){
+            echo "<span>Sin información</span>";
+        }
         for($k=0; $k < count($rowNoticiasCompleto); $k++){
             if($noticia_style1->pagination){
                if($limiteInferiorNoticias <= $k && $limiteSuperiorNoticias >= $k){
@@ -67,7 +70,7 @@
       ?>
     </div>
     <?php 
-        if($noticia_style1->pagination){ 
+        if(!empty($noticia_style1->pagination)){ 
            include_once 'componentes/footer-pagination.php';
         }
     ?>
