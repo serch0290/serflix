@@ -2,10 +2,10 @@
     <h1><?php echo $noticia->h1; ?></h1>
     <div class="author w-100-p">
         <div class="author-image">
-            <?php echo "<img src=\"".$noticia->author->foto."\" />"; ?>
+            <?php echo "<img src=\"".$noticia->author->img."\" />"; ?>
         </div>
         <div class="author-name">
-           <?php echo "<span>".$noticia->author->nombre."</span>";?>
+           <?php echo "<span>".$noticia->author->autor."</span>";?>
            
         </div>
     </div>
@@ -14,9 +14,12 @@
            foreach($detalleNoticia as $detalle){
               switch($detalle->type){
                  case 'img':
-                     echo "<div class=\"thumbail\">
-                              <img src=\"".$detalle->img."\" style=\"width: 100%; height: auto; object-fit: contain;\"/>
-                          </div>";
+                  echo "<div class=\"thumbail\">
+                            <img src=\"".$detalle->img."\" 
+                                srcset=\"".$detalle->img800. " 800w, " .$detalle->img400. " 400w, " .$detalle->img." 1024w\"
+                                sizes=\"(max-width: 896px) 100vw, 1024px\"
+                                style=\"width: 100%; height: auto; object-fit: contain;\"/>
+                        </div>";
                    break;
                  case 'html':
                     echo $detalle->html;
@@ -82,13 +85,17 @@
         <div class="enlazado">
             <span class="enlazado-title">¿Ya has leido?</span>
             <?php 
-              foreach($noticiasEnlazado as $noticiaE){
-                echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiaE["url"]."\">
-                        <img src=\"".$noticiaE["imagen"]."\" style=\"width: 100px; height: 100px; min-height: 100px; max-height: 100px; min-width: 100px; max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: cover; margin-left: 5px; object-position: center;\" />
-                        <div class=\"flex align-center-items\">
-                          <span style=\"padding: 5px;\">".$noticiaE["titulo"]."</span>
-                        </div>
-                      </a>";
+              if(count($noticiasEnlazado) > 0){
+                foreach($noticiasEnlazado as $noticiaE){
+                    echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiaE["url"]."\">
+                            <img src=\"".$noticiaE["imagen"]."\" style=\"width: 100px; height: 100px; min-height: 100px; max-height: 100px; min-width: 100px; max-width: 100px; border: none !important; margin-right: 5px; height: auto; object-fit: cover; margin-left: 5px; object-position: center;\" />
+                            <div class=\"flex align-center-items\">
+                              <span style=\"padding: 5px;\">".$noticiaE["titulo"]."</span>
+                            </div>
+                          </a>";
+                }
+              }else{
+                echo "<br><br>Sin noticias que leer.";
               }
             ?>
         </div>   
@@ -113,10 +120,10 @@
       if(!empty($noticia->author)){
         echo "<div class=\"author-box\" id=\"author-box\">
                   <div class=\"author-box-photo\">
-                      <img src=\"".$noticia->author->foto."\" />
+                      <img src=\"".$noticia->author->img."\" />
                   </div>  
                   <div class=\"author-box-biographie\">
-                      <strong>".$noticia->author->nombre."</strong>
+                      <strong>".$noticia->author->autor."</strong>
                       <p>".$noticia->author->descripcion."</p>
                   </div>  
               </div>";
@@ -126,18 +133,22 @@
        <p class="title-section">Lo que mas estan leyendo</p>
        <div class="row-xs wrap-xs column">
          <?php 
-          foreach($noticiasRelacionado as $relacionado){
-            echo "<div class=\"post-thumbnail-leido\">
-                    <a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$relacionado["url"]."\">
-                      <div class=\"container-imagen thumbnail-image-leido\">
-                          <div style=\"background-image: url('".$relacionado["imagen"]."');\" class=\"image thumbnail-image-detail-leido\"></div>
-                      </div>
-                      <div class=\"thumbnail-content-leido align-center-items\">
-                          <p>".$relacionado["titulo"]."</p>
-                      </div>
-                    </a>
-                  </div>";
-          } 
+          if(count($noticiasRelacionado) > 0){
+            foreach($noticiasRelacionado as $relacionado){
+              echo "<div class=\"post-thumbnail-leido\">
+                      <a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$relacionado["url"]."\">
+                        <div class=\"container-imagen thumbnail-image-leido\">
+                            <div style=\"background-image: url('".$relacionado["imagen"]."');\" class=\"image thumbnail-image-detail-leido\"></div>
+                        </div>
+                        <div class=\"thumbnail-content-leido align-center-items\">
+                            <p>".$relacionado["titulo"]."</p>
+                        </div>
+                      </a>
+                    </div>";
+            } 
+          }else{
+            echo "<br><br>Sin noticias relacionadas";
+          }
          ?>
        </div>
     </div><!--Fin de div de noticias leidas-->

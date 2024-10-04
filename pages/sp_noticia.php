@@ -20,7 +20,7 @@
                  (SELECT Imgn_Url 
                   FROM Srfl_Imagenes 
                   WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
-                  AND Imgn_IDResolucion = 1 AND Imgn_Estatus = 1) imagen,
+                  AND Imgn_IDResolucion = 2 AND Imgn_Estatus = 1) imagen,
                   IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia,
                   1 tipo
           FROM Srfl_Noticias 
@@ -37,7 +37,7 @@
                   (SELECT Imgn_Url 
                    FROM Srfl_Imagenes 
                    WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
-                   AND Imgn_IDResolucion = 1 AND Imgn_Estatus = 1) imagen,
+                   AND Imgn_IDResolucion = 2 AND Imgn_Estatus = 1) imagen,
                    IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia,
                   2 tipo
                   FROM Srfl_Noticias 
@@ -54,7 +54,7 @@
                   (SELECT Imgn_Url 
                    FROM Srfl_Imagenes 
                    WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
-                   AND Imgn_IDResolucion = 1 AND Imgn_Estatus = 1) imagen,
+                   AND Imgn_IDResolucion = 2 AND Imgn_Estatus = 1) imagen,
                    IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia,
                   3 tipo
                   FROM Srfl_Noticias 

@@ -6,8 +6,8 @@
     "IDNoticiasEnlazado": "8, 12, 3, 5",
     "IDNoticiasRelacionadas": "5, 3, 9, 11, 4, 6",
     "author": {
-        "nombre": "Sergio Cruz Flores",
-        "foto": "https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png",
+        "autor": "Sergio Cruz Flores",
+        "img": "https://espaciocosmico.top/wp-content/uploads/autor-espaciocosmico-top-150x150.png",
         "descripcion": "Apasionado de la era digital y defensor de la seguridad en línea. Leonardo creo este sitio web con el. Cuando no está investigando sobre los últimos gestores de contraseñas o escribiendo sobre cómo proteger tus datos, probablemente lo encontrarás disfrutando de una buena película o explorando nuevos destinos. Cree firmemente que un mundo digital seguro es posible con la educación y las herramientas adecuadas."
     },
     "noticiasLateral":{
@@ -16,7 +16,10 @@
     "detalle": [
         {
           "type": "img",
-          "img": "https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp"
+          "img": "https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp",
+          "img400": "https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp",
+          "img800": "https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp",
+          "img1024": "https://dogdiarrhea.top/wp-content/uploads/2023/11/37-1024x538.webp"
         },
         {
            "type": "html",

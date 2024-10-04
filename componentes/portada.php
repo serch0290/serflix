@@ -3,12 +3,11 @@
         <article id="portada" class="article-principal">
           <?php 
             if(count($noticiasPortada) > 0){//Adicional
-                echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticiasPortada[0]["url"]."\">
+                echo "<a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$noticiasPortada[0]["url"]."\">
                         <div class=\"container-noticia\">
                             <div class=\"container-imagen content-image-principal\">
-                                <img srcset=\"".$noticiasPortada[0]["imagen300"]." 300w, ".$noticiasPortada[0]["imagen"]." 1024w\" 
-                                    sizes=\"(max-width: 600px) 300px,
-                                            1024px\" class=\"image-src image-principal\" />
+                                <img srcset=\"".$noticiasPortada[0]["imagen1024"]." 1024w, ".$noticiasPortada[0]["imagen800"]." 800w, ".$noticiasPortada[0]["imagen400"]." 400w, ".$noticiasPortada[0]["imagen"]." 2000w\" 
+                                    sizes=\"(max-width: 1024px) 1024px, (max-width: 800px) 800px, (max-width: 400px) 400px, 2000px\" class=\"image-src image-principal\" />
                                 <div class=\"content-item-category\">
                                     <strong>".$noticiasPortada[0]["categoria"]."</strong>
                                 </div>
@@ -52,7 +51,7 @@
                             <a href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$noticiasPortada[$i]["url"]."\">
                                 <div class=\"container-noticia\">
                                     <div class=\"container-imagen image-thumb-image\">
-                                        <div style=\"background-image: url('".$noticiasPortada[$i]["imagen"]."');\" class=\"image article-image-thumb\"></div>
+                                        <div style=\"background-image: url('".$noticiasPortada[$i]["imagen400"]."');\" class=\"image article-image-thumb\"></div>
                                         <div class=\"content-item-category\">
                                             <strong>".$noticiasPortada[$i]["categoria"]."</strong>
                                         </div>

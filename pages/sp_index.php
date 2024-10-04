@@ -22,7 +22,15 @@
                             (SELECT Imgn_Url 
                             FROM Srfl_Imagenes 
                             WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
-                            AND Imgn_IDResolucion = 2 AND Imgn_Estatus = 1) imagen300,
+                            AND Imgn_IDResolucion = 2 AND Imgn_Estatus = 1) imagen1024,
+                            (SELECT Imgn_Url 
+                            FROM Srfl_Imagenes 
+                            WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
+                            AND Imgn_IDResolucion = 3 AND Imgn_Estatus = 1) imagen800,
+                            (SELECT Imgn_Url 
+                            FROM Srfl_Imagenes 
+                            WHERE Imgn_IDNoticia = Ntcs_IDNoticia 
+                            AND Imgn_IDResolucion = 4 AND Imgn_Estatus = 1) imagen400,
                             IFNULL(Ntcs_TipoCtgr, 0) tipoNoticia
                      FROM Srfl_Noticias 
                      INNER JOIN Srfl_NtcsCtgr ON NtCt_IDNoticia = Ntcs_IDNoticia AND NtCt_Estatus = 1 
@@ -84,7 +92,6 @@
   <body>
   <?php include_once 'componentes/menu.php';?>
   <!-- Mnesjae principal de la pagina h1 -->
-  
   <!--Sección de noticias estilo tipo 1-->
   <div class="container container-xs">
     <?php include_once 'componentes/content-home.php'; ?>
