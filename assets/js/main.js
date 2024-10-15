@@ -42,7 +42,7 @@ function showModal(mensaje){
 
 function closeModal(){
     $("#myModal").css('display', 'none');
-    $("#myModal").html('');
+    $(".modal-content").html('');
 }
 
 
