@@ -2,7 +2,7 @@
      <?php
      foreach ($rowNoticiasCategoriaTodos as $noticia) {  
         echo "<article class=\"article-style2\">
-                <a class=\"container-noticia\" href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.$noticia["url"]."\">
+                <a class=\"container-noticia\" href=\"".$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$noticia["url"]."\">
                 <div class=\"container-imagen article-content-image\">
                     <div style=\"background-image: url('".$noticia["imagen"]."');\" class=\"image article-image\"></div>
                 </div>
