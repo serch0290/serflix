@@ -42,12 +42,6 @@
         }
     }
 
-    if (isset($_GET["b"])){
-        $parametro = $_GET["b"]; 
-        include __DIR__.'/pages/sp_buscador.php';
-        return;
-    }
-
     if(str_contains($request_final[0], '/php/')){
        include __DIR__.'/assets/php/guardarComentario.php';
        return;
@@ -55,6 +49,12 @@
 
     /**Configuración general del sitio */
     $configuracion = json_decode(file_get_contents('assets/json/configuracionGeneral.json'), false);
+
+    if (isset($_GET["b"])){
+        $parametro = $_GET["b"]; 
+        include __DIR__.'/pages/sp_buscador.php';
+        return;
+    }
 
         // Verificar si hay página o no
     if(isset($rutas[$request_final[0]])) {

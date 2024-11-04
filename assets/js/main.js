@@ -81,7 +81,7 @@ function deleteCookie(){
 
 /**Redirecciona a la vista del buscador */
 function buscador(){
-    var buscador = $(".input-search").val();
+    var buscador = $(".input-search-text").val();
     console.log('buscador: ', buscador);
 
     if(buscador){

@@ -58,6 +58,7 @@
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticias.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/buscador.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/menu.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/cookies.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
   </head>  
@@ -72,7 +73,10 @@
           if(count($rowNoticiasCompleto) > 0){
              include_once 'componentes/noticias-style1.php'; 
           }else{
-            echo "<p>No se encontraron resultados.</p>";
+            echo "<p>No se encontraron resultados.</p> 
+                    <div class=\"mt-20\">";
+                include_once 'componentes/noticias-interesantes.php';
+            echo "</div>";
           }
          ?>
     </div>
