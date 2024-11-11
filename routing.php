@@ -1,5 +1,6 @@
 <?php
     $rutas = [
+        '/' => ['Página principal', 'sp_index.php', 'home'],
         '/serflix/' => ['Página principal', 'sp_index.php', 'home'],
         '/serflix' => ['Página principal', 'sp_index.php', 'home'],
         '/serflix/principal' => ['Página principal', 'sp_index_principal.php', ''],

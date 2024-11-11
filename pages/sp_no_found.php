@@ -9,6 +9,7 @@
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticias.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/menu.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/cookies.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
   </head>  
   <body>

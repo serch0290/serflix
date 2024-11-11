@@ -28,7 +28,7 @@
     /**Validar si la pagina tiene paginacion y si exista esa apgian de paginacion*/
     if(str_contains($request_final[0], 'pagina')){
        $request_final_validation = explode('/pagina/',$request_final[0]);
-       $request_final = $request_final_validation;
+       $request_final[0] = '/';
        $isPagination = true;
     }
 
