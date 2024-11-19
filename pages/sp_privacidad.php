@@ -10,11 +10,12 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-      <link  rel="stylesheet" href="/serflix/assets/css/dynamic.css">
+      <link  rel="stylesheet" href=/serflix/assets/css/dynamic.css">
       <link  rel="stylesheet" href="/serflix/assets/css/general.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/menu.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/privacity.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/breadcrums.css">
+      <link  rel="stylesheet" href="/serflix/assets/css/components/cookies.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/footer.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
   </head>  
@@ -33,21 +34,9 @@
                     }
                 ?>
             </ul>
-            <h1>Política de Privacidad</h1>
+            <h1><?php echo $acercaDeMi->h1; ?></h1>
             <div class="detail-privacy">
-                <p>El Titular le informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios que puedan ser recabados durante la navegación a través del Sitio Web: http://arduinfo.xyz</p>
-                <p>En este sentido, el Titular cumple con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).</p>
-                <p>El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el  Aviso Legal.</p>
-                <h2>
-                  Identidad del Responsable
-                </h2>
-                <ul>
-                    <li><strong>Responsable:</strong> Sergio Cruz.</li>
-                    <li><strong>Domicilio:</strong> Avenida José Larco 1232, Miraflores, Municipalidad Metropolitana de Lima - Perú.</li>
-                    <li><strong>Correo electrónico:</strong> hola@arduinfo.xyz.</li>
-                    <li><strong>Sitio Web:</strong> ejemplo.com.mx.</li>
-                    <li><a href="#irDetalle">Política de Privacidad</a></li>
-                </ul>
+            <?php echo $acercaDeMi->texto; ?>
             </div>
           </div>
         </article>
@@ -55,5 +44,6 @@
       <?php include_once 'componentes/cookies.php';?>
       <?php include_once 'componentes/footer.php';?>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="/serflix/assets/js/main.js"></script>
 </html>
