@@ -4,7 +4,7 @@
   //Quitamos las variables que puedan llegar por url
   $request_final = explode("?", $request);
   //Obtenemos toda la configuración de la noticia
-  $category = json_decode(file_get_contents('assets/json' . $request_final[0] . '.json'), false);
+  $category = json_decode(file_get_contents('assets/json' . $request_final[0] .'_'.$version. '.json'), false);
 
   $conexion = new Conexion();
   $conn = $conexion->connect();
