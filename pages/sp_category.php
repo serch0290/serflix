@@ -94,6 +94,7 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+      <title><?php echo $category->mTitle; ?></title>
       <link  rel="stylesheet" href="/serflix/assets/css/dynamic.css">
       <link  rel="stylesheet" href="/serflix/assets/css/general.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/menu.css">

@@ -89,6 +89,7 @@
       <meta charset="utf-8">
       <link rel="icon" href="https://definanzas.top/wp-content/uploads/cropped-icono-definanzas-top-32x32.png"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+      <title><?php echo $noticia->title; ?></title>
       <link  rel="stylesheet" href="/serflix/assets/css/dynamic.css">
       <link  rel="stylesheet" href="/serflix/assets/css/general.css">
       <link  rel="stylesheet" href="/serflix/assets/css/components/noticia.css">
